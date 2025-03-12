@@ -22,31 +22,41 @@
 
 <body>
   <!-- Top Bar -->
-
   <div class="top-bar">
     <div class="wrapper">
       <div class="top-bar-flex">
 
+        <!-- Desktop View (Hidden on Mobile) -->
         <div class="top-left">
           <i class="fas fa-home"></i> <a href="#">Home</a>
           <i class="fas fa-info-circle"></i> <a href="#">About Us</a>
           <i class="fas fa-envelope"></i> <a href="#">Contact</a>
           <i class="fas fa-question-circle"></i>
-          <a href="#">FAQ
-            <i class="fas fa-caret-down"></i>
-          </a>
+          <a href="#">FAQ <i class="fas fa-caret-down"></i></a>
         </div>
+
         <div class="top-between">
           <span>🇬🇧 English <i class="fas fa-caret-down"></i></span>
           <span>$ US Dollar <i class="fas fa-caret-down"></i></span>
         </div>
+
         <div class="top-right">
           <i class="fas fa-bars"></i>
-          <a href="#">More Menus
-            <i class="fas fa-caret-down"></i>
-          </a>
+          <a href="#">More Menus <i class="fas fa-caret-down"></i></a>
           <i class="fas fa-truck"></i> <a href="#">Delivery</a>
         </div>
+
+        <!-- Mobile View (Only Shows on Mobile) -->
+        <div class="mobile-left">
+          <i class="fas fa-sign-in-alt"></i> <a href="#">Login</a>
+          <i class="fas fa-user-plus"></i> <a href="#">Register</a>
+        </div>
+
+        <div class="mobile-right">
+          <span>$ US Dollar <i class="fas fa-caret-down"></i></span>
+          <span>🇬🇧 English <i class="fas fa-caret-down"></i></span>
+        </div>
+
       </div>
     </div>
   </div>
@@ -540,7 +550,7 @@
 
 
         <div class="fea-prd-slider-dots">
-         </div>
+        </div>
 
 
         <!-- //create a buttton with the inside trext "SEE ALL Products" -->
@@ -787,6 +797,7 @@
 
   <!-------------------From our Blog----------------- -->
 
+
   <section class="blog-section">
     <h2>From our Blog</h2>
     <p>
@@ -799,146 +810,127 @@
       <button>MOST READ</button>
     </div>
 
-    <div class="blog-container">
-      <div class="wrapper">
-        <div class="blog-flex">
-          <div class="blog-card">
-            <div class="blog-data">
-              <div class="blog-date1">
-                <span class="date">02</span> <span class="month">Aug</span>
-              </div>
-              <img src="images/journal.jpg" alt="Blog Image 1" />
-              <div class="meta">
-                <span>👤 admin</span>
-                <span>💬 38</span>
-                <span>👁 19340</span>
-              </div>
-            </div>
-            <div class="blog-info">
-              <h3><b>Journal Blog is Here</b></h3>
-              <p>
-                The Journal 3 blog has been greatly improved and it now comes
-                with the most advanced set of typography tools, including custom
-                drop-cap support as well as optional newspaper-like fluid
-                columns. You can break up the page in up to 4 columns and change
-                the configuration per breakpoint for the best article layout on
-                any screen width. The Journal blog i..
-              </p>
-              <a href="#">Read More →</a>
-            </div>
-          </div>
+    <div class="wrapper">
 
-          <div class="blog-card">
-            <div class="blog-data">
-              <div class="blog-date2">
-                <span class="date">02</span> <span class="month">Aug</span>
+      <div class="blog-container splide" id="blog-slider">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide blog-card">
+              <div class="blog-data">
+                <div class="blog-date1">
+                  <span class="date">02</span> <span class="month">Aug</span>
+                </div>
+                <img src="images/journal.jpg" alt="Blog Image 1" />
+                <div class="meta">
+                  <span>👤 admin</span>
+                  <span>💬 38</span>
+                  <span>👁 19340</span>
+                </div>
               </div>
-              <img src="images/leather-bag.jpg" alt="Blog Image 2" />
-              <div class="meta">
-                <span>👤 admin</span>
-                <span>💬 17</span>
-                <span>👁 7341</span>
+              <div class="blog-info">
+                <h3><b>Journal Blog is Here</b></h3>
+                <p>
+                  The Journal 3 blog has been greatly improved and it now comes with
+                  the most advanced set of typography tools, including custom
+                  drop-cap support as well as optional newspaper-like fluid columns.
+                </p>
+                <a href="#">Read More →</a>
               </div>
             </div>
-            <div class="blog-info">
-              <h3><b>Best Leather Bags</b></h3>
-              <p>
-                Best Opencart theme options you can find in any theme? Decide
-                for yourself by visiting one our demo admin, user/pass:
-                demo/demo. The Journal 3 blog has been greatly improved and it
-                now comes with the most advanced set of typography tools,
-                including custom drop-cap support as well as optional
-                newspaper-like fluid columns. You can break up the page i..
-              </p>
-              <a href="#">Read More →</a>
-            </div>
-          </div>
 
-          <div class="blog-card">
-            <div class="blog-data">
-              <div class="blog-date3">
-                <span class="date">02</span> <span class="month">Aug</span>
+            <div class="splide__slide blog-card">
+              <div class="blog-data">
+                <div class="blog-date2">
+                  <span class="date">02</span> <span class="month">Aug</span>
+                </div>
+                <img src="images/leather-bag.jpg" alt="Blog Image 2" />
+                <div class="meta">
+                  <span>👤 admin</span>
+                  <span>💬 17</span>
+                  <span>👁 7341</span>
+                </div>
               </div>
-              <img src="images/post.jpg" alt="Blog Image 3" />
-              <div class="meta">
-                <span>👤 admin</span>
-                <span>💬 47</span>
-                <span>👁 6264</span>
+              <div class="blog-info">
+                <h3><b>Best Leather Bags</b></h3>
+                <p>
+                  The Journal 3 blog has been greatly improved and it now comes with
+                  the most advanced set of typography tools, including custom drop-cap
+                  support as well as optional newspaper-like fluid columns.
+                </p>
+                <a href="#">Read More →</a>
               </div>
             </div>
-            <div class="blog-info">
-              <h3><b>Another Blog Post</b></h3>
-              <p>
-                Another blog post. Write unlimited blog articles, or have
-                someone write them for you with partial admin access. The
-                Journal 3 blog has been greatly improved and it now comes with
-                the most advanced set of typography tools, including custom
-                drop-cap support as well as optional newspaper-like fluid
-                columns. You can break up the page in up to 4 column..
-              </p>
-              <a href="#">Read More →</a>
+
+            <div class="splide__slide blog-card">
+              <div class="blog-data">
+                <div class="blog-date3">
+                  <span class="date">02</span> <span class="month">Aug</span>
+                </div>
+                <img src="images/post.jpg" alt="Blog Image 3" />
+                <div class="meta">
+                  <span>👤 admin</span>
+                  <span>💬 47</span>
+                  <span>👁 6264</span>
+                </div>
+              </div>
+              <div class="blog-info">
+                <h3><b>Another Blog Post</b></h3>
+                <p>
+                  The Journal 3 blog has been greatly improved and it now comes with
+                  the most advanced set of typography tools, including custom drop-cap
+                  support as well as optional newspaper-like fluid columns.
+                </p>
+                <a href="#">Read More →</a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Custom Pagination -->
+        <div class="blog-slider-pagination" id="custom-pagination"></div>
       </div>
-    </div>
-    <div class="slider-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <!-- <span class="dot"></span> -->
-    </div>
-    <div class="pagination">
-      <span class="active"></span>
-      <span></span>
     </div>
   </section>
 
 
   <!-- -----------------------TESTIMONIALS---------------------- -->
+
   <section class="testimonials">
     <div class="wrapper">
       <h2>What are people saying about us</h2>
       <div class="underline-testimonials"></div>
 
-      <div class="testimonials-container">
-        <div class="testimonial">
-          <i class="fas fa-quote-left quote-icon"></i>
-          <p>
-            I've purchased hundreds and hundreds of files over the past 7
-            years. But there is nothing close to this support and
-            professionalism. Not only is the theme simple, useful, and modern,
-            but again the support is remarkable. Very happy I got this theme!
-            Thank you!
-          </p>
-          <p class="author">- charlibaltimore</p>
-        </div>
-
-        <div class="testimonial">
-          <i class="fas fa-quote-left quote-icon"></i>
-          <p>
-            I am a web developer for many years. I haven't seen anything
-            clear, clean-coded like Journal. It makes my life so much easier.
-            Thanks for the great work you have done.
-          </p>
-          <p class="author">- chromebandit</p>
-        </div>
-
-        <div class="testimonial">
-          <i class="fas fa-quote-left quote-icon"></i>
-          <p>
-            Great toolkit for Opencart. As a base platform, Opencart can be a
-            nightmare to modify and get looking good. Journal takes away all
-            the pain.
-          </p>
-          <p class="author">- kellyhorne</p>
+      <!-- Splide Slider -->
+      <div id="testimonial-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="testimonial">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>I've purchased hundreds and hundreds of files over the past 7 years...</p>
+                <p class="author">- charlibaltimore</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>I am a web developer for many years. I haven't seen anything clear, clean-coded like Journal...</p>
+                <p class="author">- chromebandit</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Great toolkit for Opencart. Opencart can be a nightmare to modify...</p>
+                <p class="author">- kellyhorne</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-      </div>
-
+      <!-- Custom Pagination -->
+      <div class="testimonial-dots"></div>
     </div>
   </section>
   <!-- --------------Most Viewed Section---------------------->
@@ -946,88 +938,84 @@
 
   <section class="popular-products">
     <div class="container">
-        <div class="wrapper">
-            <div class="header-section">
-                <h2 class="title">MOST VIEWED</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="product-slider splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <li class="splide__slide item-box">
-                            <div class="item-content">
-                                <div class="item-thumb"><img src="images/sunglass.jpg" alt="Oversized Sunglasses">
-                                </div>
-                                <div class="item-details">
-                                    <div class="item-name">Oversized Sunglasses For Lon...</div>
-                                    <div class="item-price">$397.00</div>
-                                    <div class="item-icons">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-regular fa-face-smile"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide item-box">
-                            <div class="item-content">
-                                <div class="item-thumb"><img src="images/headphones.jpg" alt="Headphones"></div>
-                                <div class="item-details">
-                                    <div class="item-name">Headphones</div>
-                                    <div class="item-price">
-                                        <span class="discount">$999.00</span>
-                                        <span class="original-price">$3,299.00</span>
-                                    </div>
-                                    <div class="item-icons">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-regular fa-face-smile"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide item-box">
-                            <div class="item-content">
-                                <div class="item-thumb"><img src="images/headphones.jpg" alt="Women's Maria Pump">
-                                </div>
-                                <div class="item-details">
-                                    <div class="item-name">Women's Maria Pump</div>
-                                    <div class="item-price">$425.00</div>
-                                    <div class="item-icons">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-regular fa-face-smile"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide item-box">
-                            <div class="item-content">
-                                <div class="item-thumb"><img src="images/headphones.jpg" alt="Sport Watch"></div>
-                                <div class="item-details">
-                                    <div class="item-name">Sport Watch</div>
-                                    <div class="item-price">$209.15</div>
-                                    <div class="item-icons">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-regular fa-face-smile"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="splide__pagination custom-nav"></div>
-            </div>
+      <div class="wrapper">
+        <!-- Header Section Placed Above the Slider -->
+        <div class="header-section">
+          <h2 class="title">MOST VIEWED</h2>
+          <div class="title-underline"></div>
         </div>
+
+        <!-- Product Slider -->
+        <div class="product-slider splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide item-box">
+                <div class="item-content">
+                  <div class="item-thumb"><img src="images/sunglass.jpg" alt="Oversized Sunglasses"></div>
+                  <div class="item-details">
+                    <div class="item-name">Oversized Sunglasses For Lon..</div>
+                    <div class="item-price">$397.00</div>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide item-box">
+                <div class="item-content">
+                  <div class="item-thumb"><img src="images/headphones.jpg" alt="Headphones"></div>
+                  <div class="item-details">
+                    <div class="item-name">Headphones</div>
+                    <div class="item-price">
+                      <span class="discount">$999.00</span>
+                      <span class="original-price">$3,299.00</span>
+                    </div>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide item-box">
+                <div class="item-content">
+                  <div class="item-thumb"><img src="images/headphones.jpg" alt="Women's Maria Pump"></div>
+                  <div class="item-details">
+                    <div class="item-name">Women's Maria Pump</div>
+                    <div class="item-price">$425.00</div>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide item-box">
+                <div class="item-content">
+                  <div class="item-thumb"><img src="images/headphones.jpg" alt="Sport Watch"></div>
+                  <div class="item-details">
+                    <div class="item-name">Sport Watch</div>
+                    <div class="item-price">$209.15</div>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="product-dots"></div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+
 
   <!-- Footer Section -->
   <footer>
@@ -1129,13 +1117,13 @@
         rewind: false,
         speed: 600,
         updateOnMove: true,
-    });
+      });
 
-    splide.on("mounted", function () {
+      splide.on("mounted", function () {
         document.querySelector("#hero-slider").style.visibility = "visible"; // Ensure visibility
-    });
+      });
 
-    splide.mount();
+      splide.mount();
 
 
 
@@ -1152,117 +1140,135 @@
       // Initialize Category Slider
 
       var categorySlider = new Splide("#category-slider", {
-    type: "loop",
-    perPage: 5,
-    perMove: 1,
-    gap: "8px",
-    breakpoints: {
-      1280: { perPage: 4 },
-      1024: { perPage: 3 },
-      768: { perPage: 2 },
-      480: { perPage: 1 },
-    },
-    pagination: false, // Disable Splide's default pagination
-    arrows: true,
-    autoplay: true,
-    interval: 3000,
-  });
+        type: "loop",
+        perPage: 5,
+        perMove: 1,
+        gap: "5px",
+        breakpoints: {
+          1280: { perPage: 4 },
+          1024: { perPage: 3 },
+          768: { perPage: 2 },
+          480: { perPage: 1 },
+        },
+        pagination: false, // Disable Splide's default pagination
+        arrows: true,
+        autoplay: true,
+        interval: 3000,
+      });
 
-  categorySlider.mount();
+      categorySlider.mount();
 
-  // ✅ Initialize Featured Product Slider
-  var feaPrdSlider = new Splide("#fea-prd-slider", {
-    type: "loop",
-    perPage: 4,
-    perMove: 1,
-    gap: "8px",
-    breakpoints: {
-      1280: { perPage: 3 },
-      1024: { perPage: 2 },
-      768: { perPage: 1 },
-    },
-    pagination: false, // Disable Splide's default pagination
-    arrows: true,
-    autoplay: true,
-    interval: 3000,
-  });
+      var feaPrdSlider = new Splide("#fea-prd-slider", {
+        type: "loop",
+        perPage: 4,
+        perMove: 1,
+        gap: "0px",
+        breakpoints: {
+          1280: { perPage: 3 },
+          1024: { perPage: 2 },
+          768: { perPage: 1 },
+        },
+        pagination: false, // Disable Splide's default pagination
+        arrows: true,
+        autoplay: true,
+      });
 
-  feaPrdSlider.mount();
+      feaPrdSlider.mount();
 
-  createCustomPagination(categorySlider, ".category-slider-dots");
+      createCustomPagination(categorySlider, ".category-slider-dots");
 
-  createCustomPagination(feaPrdSlider, ".fea-prd-slider-dots");
+      createCustomPagination(feaPrdSlider, ".fea-prd-slider-dots");
 
-  function createCustomPagination(slider, dotContainerClass) {
-    var dotsContainer = document.querySelector(dotContainerClass);
+      function createCustomPagination(slider, dotContainerClass) {
+        var dotsContainer = document.querySelector(dotContainerClass);
 
-    if (dotsContainer) {
-      dotsContainer.innerHTML = ""; // Clear existing dots
+        if (dotsContainer) {
+          dotsContainer.innerHTML = ""; // Clear existing dots
 
-      var totalSlides = slider.length;
+          var totalSlides = slider.length;
+
+          for (let i = 0; i < totalSlides; i++) {
+            let dot = document.createElement("span");
+            dot.classList.add("dot");
+            if (i === 0) dot.classList.add("active");
+
+            dot.addEventListener("click", function () {
+              slider.go(i);
+            });
+
+            dotsContainer.appendChild(dot);
+          }
+
+          slider.on("move", function (newIndex) {
+            document.querySelectorAll(dotContainerClass + " .dot").forEach((dot, index) => {
+              dot.classList.toggle("active", index === newIndex);
+            });
+          });
+        }
+      }
+      var brandsection = new Splide('#brand-slider', {
+        type: 'loop',
+        perPage: 9, /* Show 9 images above 1024px */
+        perMove: 9,
+        gap: '5px',
+        pagination: true,
+        breakpoints: {
+          1024: { perPage: 6, perMove: 6 }, /* Show 6 images on tablets */
+          768: { perPage: 4, perMove: 4 },  /* Show 4 images on small tablets */
+          480: { perPage: 2, perMove: 2 }   /* Show 2 images on mobile */
+        }
+      });
+
+      brandsection.mount();
+
+      let blog = new Splide('#blog-slider', {
+        type: 'loop',
+        perPage: 2,
+        perMove: 1,
+        gap: '20px',
+        breakpoints: {
+          1024: {
+            perPage: 2,
+            gap: "20px",
+          },
+          768: { perPage: 1 }
+        },
+        pagination: false,
+        arrows: false
+      }).mount();
+
+      // Custom Pagination
+      let paginationContainer = document.getElementById('custom-pagination');
+      let totalSlides = blog.length;
 
       for (let i = 0; i < totalSlides; i++) {
-        let dot = document.createElement("span");
-        dot.classList.add("dot");
-        if (i === 0) dot.classList.add("active");
+        let dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.dataset.index = i;
 
-        // ✅ Click Event to Navigate Slides
-        dot.addEventListener("click", function () {
-          slider.go(i);
+        dot.addEventListener('click', function () {
+          blog.go(parseInt(this.dataset.index));
         });
 
-        dotsContainer.appendChild(dot);
+        paginationContainer.appendChild(dot);
       }
 
-      slider.on("move", function (newIndex) {
-        document.querySelectorAll(dotContainerClass + " .dot").forEach((dot, index) => {
-          dot.classList.toggle("active", index === newIndex);
-        });
+      blog.on('move', function (newIndex) {
+        document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+        document.querySelector(`.dot[data-index="${newIndex}"]`).classList.add('active');
       });
-    }
-  } 
-      var brandsection = new Splide('#brand-slider', {
-          type: 'loop',
-          perPage: 9, /* Show 9 images above 1024px */
-          perMove: 9,
-          gap: '5px',
-          pagination: true,
-          breakpoints: {
-            1024: { perPage: 6, perMove: 6 }, /* Show 6 images on tablets */
-            768: { perPage: 4, perMove: 4 },  /* Show 4 images on small tablets */
-            480: { perPage: 2, perMove: 2 }   /* Show 2 images on mobile */
-          }
-        });
-
-        brandsection.mount();
 
 
-        var brandsection2 = new Splide(".blog-slider", {
-          type: "loop",
-          perPage: 3,       // 3 slides on large screens
-          perMove: 1,       // Moves 1 slide per click
-          gap: "20px",      // Space between slides
-          autoplay: true,   // Auto-scroll enabled
-          interval: 3000,   // Auto-scroll every 3 sec
-          arrows: true,     // Left/Right navigation arrows
-          pagination: true, // Enables pagination dots
-          speed: 600,       // Slide transition speed
-          breakpoints: {
-            1024: { perPage: 2 }, // Tablets (show 2 slides)
-            768: { perPage: 1 },  // Mobile (show 1 slide)
-          },
-        })
-
-        brandsection2.mount();
 
 
-      });
+    });
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
