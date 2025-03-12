@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal Store</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+  <script src="https://kit.fontawesome.com/24535b5205.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+
+<body>
+  <!-- Top Bar -->
+
+  <div class="top-bar">
+    <div class="wrapper">
+      <div class="top-bar-flex">
+
+        <div class="top-left">
+          <i class="fas fa-home"></i> <a href="#">Home</a>
+          <i class="fas fa-info-circle"></i> <a href="#">About Us</a>
+          <i class="fas fa-envelope"></i> <a href="#">Contact</a>
+          <i class="fas fa-question-circle"></i>
+          <a href="#">FAQ
+            <i class="fas fa-caret-down"></i>
+          </a>
+        </div>
+        <div class="top-between">
+          <span>🇬🇧 English <i class="fas fa-caret-down"></i></span>
+          <span>$ US Dollar <i class="fas fa-caret-down"></i></span>
+        </div>
+        <div class="top-right">
+          <i class="fas fa-bars"></i>
+          <a href="#">More Menus
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <i class="fas fa-truck"></i> <a href="#">Delivery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Navbar -->
+  <div class="hero-navbar">
+    <div class="wrapper">
+      <div class="hero-flex">
+        <h1 class="logo">JOURNAL</h1>
+        <div class="search-bar-wrapper">
+          <div class="search-bar">
+            <button class="all-button">
+              All <i class="fas fa-caret-down"></i>
+            </button>
+            <input type="text" placeholder="Search here..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class="nav-icons">
+          <div class="nav-icon">
+            <div class="nav-icon-text">
+              <a href="#"><i class="fas fa-user"></i> Login</a>
+            </div>
+            <div class="nav-icon-text">
+              <a href="#"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
+            <div class="nav-icon-text">
+              <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+            </div>
+            <div class="nav-icon-text">
+              <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-cart">
+          <a href="#">0 item(s) - $0.00
+            <div class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Bar -->
+  <!-- Menu Bar -->
+  <div class="menu-barr">
+    <div class="wrapper">
+      <!-- Left Section -->
+      <div class="hero-navbar-allignment">
+        <div class="category-menu">
+          <button class="category-btn">
+            <i class="fas fa-bars"></i> ALL DEPARTMENTS
+            <span class="sale">Sale</span>
+          </button>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="category-sidebtn">
+          <a href="#">MULTILEVEL</a>
+          <a href="#">MEGA MENU <span class="new">New</span></a>
+          <a href="#">FULLWIDTH</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="contact-info">
+          <i class="fas fa-phone"></i> 1.800.555.6789
+          <button class="blog-btn"><i class="fas fa-blog"></i> BLOG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Hero Banner Section -->
+  <div class="wrapper">
+
+
+    <div class="main-content">
+      <section id="hero-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+
+            <!-- Slide 1 -->
+            <li class="splide__slide">
+              <div class="hero-center">
+                <div class="hero-image-wrapper">
+                  <img src="images/cactus-potted-plant-lavender-smart-phone-white-background.jpg" loading="lazy"
+                    alt="Mobile 1">
+                  <div class="hero-text">
+                    <span class="tag">MOBILE</span>
+                    <h1>Best mobile options <br> at any resolution</h1>
+                    <div>
+                      <button class="learn-more-btn">
+                        LEARN MORE
+                        <div>
+                          <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </button>
+                    </div>
+                    <!-- Pagination Wrapper -->
+                    <!-- <div class="custom-pagination splide__pagination"></div> -->
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 2 -->
+            <li class="splide__slide">
+              <div class="hero-center">
+                <div class="hero-image-wrapper">
+                  <img src="images/cactus-potted-plant-lavender-smart-phone-white-background.jpg" loading="lazy"
+                    alt="Mobile 2">
+                  <div class="hero-text">
+                    <span class="tag">NEW ARRIVALS</span>
+                    <h1>Explore the latest devices</h1>
+                    <div>
+                      <button class="learn-more-btn">
+                        LEARN MORE
+                        <div>
+                          <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </button>
+                    </div>
+                    <!-- Pagination Wrapper -->
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="custom-pagination splide__pagination"></div>
+      </section>
+
+
+      <div class="hero-right">
+        <div class="small-box">
+          <div class="overlay-text">
+            <span class="small-title">WEARABLES</span>
+            <p>
+              Intelligent <br />
+              & Durable <br />
+              Design
+            </p>
+          </div>
+          <img src="images/WhatsApp Image 2025-02-23 at 14.11.28_0a2a8fea.jpg" loading="lazy" alt="Smartwatch" />
+        </div>
+        <!-- <div class="small-box2"> -->
+        <div class="small-box">
+          <div class="overlay-text">
+            <span class="small-title">COMPUTERS</span>
+            <p>
+              Build your <br />
+              own high <br />
+              powered PC
+            </p>
+          </div>
+          <img src="images/desktopwithpc.jpg" loading="lazy" alt="Computer" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Features Section -->
+
+
+
+  <section class="features-bar">
+    <div class="wrapper">
+      <div class="fea-div">
+        <div class="fea-div-cnt1">
+          <div class="feature-item">
+            <i class="circle fas fa-truck"></i>
+            <div>
+              <h4>Free Shipping</h4>
+              <p>Free delivery over $100</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-undo-alt"></i>
+            <div class="text-feature">
+              <h4>Free Returns</h4>
+              <p>Hassle free returns</p>
+            </div>
+          </div>
+        </div>
+        <div class="fea-div-cnt1">
+          <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <h4>Secure Shopping</h4>
+              <p>Best security features</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-cube"></i>
+            <div>
+              <h4>Unlimited Blocks</h4>
+              <p>Any content, any page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------------------------------------------- -->
+  <section class="why-buy">
+    <h2>Why buy from us?</h2>
+    <p>
+      Journal has been the best selling and most loved Opencart theme since
+      first launch in 2013. Tried and tested by over 20K people, Journal is
+      the best Opencart theme framework on the market today.
+      <a href="#">Learn more</a>
+    </p>
+
+    <div class="categories1">
+      <button class="active1">TOP CATEGORIES</button>
+      <button>ELECTRONICS</button>
+      <button>BEAUTY</button>
+      <button>FASHION</button>
+    </div>
+    <div class="wrapper">
+      <section class="splide" id="category-slider" aria-label="Category Slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="category">
+                <img src="images/fashion.jpg" loading="lazy" alt="Fashion" />
+                <span>FASHION</span>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="category">
+                <img src="images/bags.jpg" loading="lazy" alt="Bags" />
+                <span>BAGS</span>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="category">
+                <img src="images/beauty.jpg" loading="lazy" alt="Health & Beauty" />
+                <span>HEALTH & BEAUTY</span>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="category">
+                <img src="images/blonde-woman.jpg" loading="lazy" alt="Footwear" />
+                <span>FOOTWEAR</span>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="category">
+                <img src="images/decor.jpg" loading="lazy" alt="Home Decor" />
+                <span>HOME DECOR</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Pagination Dots -->
+      <div class="category-slider-dots">
+        <!-- <span class="dot active"></span>
+        <span class="dot"></span> -->
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Features Section -->
+  <section class="features-prducts why-buy">
+    <h2>Featured Products</h2>
+    <p>
+      Display any products as tabs or accordions with optional grid or
+      carousel mode. Customize per module and breakpoint. Each module can
+      display products in either grid or list view with different styles per
+      module.
+    </p>
+
+    <div class="categories">
+      <button class="active">FEATURED</button>
+      <button>LATEST</button>
+      <button>BESTSELLER</button>
+      <button class="spec-btn">SPECIALS</button>
+    </div>
+
+    <div class="wrapper">
+      <div class="category-list features">
+        <section class="splide" id="fea-prd-slider" aria-label="Category Slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+
+              <!-- Slide 1 -->
+              <li class="splide__slide">
+                <div class="prd-card">
+                  <div class="custom-label">CUSTOM LABELS</div>
+                  <div class="discount-badge">-70%</div>
+                  <div class="hot-badge">HOT</div>
+                  <div class="prd-image">
+                    <img src="images/apple-30310_1280.png" loading="lazy" alt="Headphones" />
+                  </div>
+                  <div class="mid">
+                    <h4 class="brnd">NY Fashion</h4>
+                    <h4 class="model">Model 206</h4>
+                  </div>
+                  <div class="product-details">
+                    <h3 class="product-name">Women's Maria Pump</h3>
+                    <p class="pricess">
+                      <span class="new-price">$425.00</span>
+                    </p>
+                    <div class="cart-options">
+                      <div class="quan-add">
+                        <div class="quantity">
+                          <div class="quantity-number">1</div>
+                          <div class="quantity-controls">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                        <button class="add-t-cart">ADD TO CART</button>
+                      </div>
+                      <div class="icns">
+                        <i class="fas fa-heart wishlist-icon"></i>
+                        <i class="fas fa-exchange-alt compare-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="buy-now">
+                      <img src="images/noun-dollar-918997.png" loading="lazy" alt="Dollar Icon" width="20px"
+                        height="20px" />
+                      Buy Now
+                    </div>
+                    <div class="question">? Question</div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Slide 2 -->
+              <li class="splide__slide">
+                <div class="prd-card">
+                  <div class="custom-label2">2-3 days</div>
+                  <div class="discount-badge">Top BRAND</div>
+                  <div class="prd-image">
+                    <img src="images/apple-30310_1280.png" loading="lazy" alt="Headphones" />
+                  </div>
+                  <div class="mid">
+                    <h4 class="brnd">Ericksson</h4>
+                    <h4 class="model">Model 519</h4>
+                  </div>
+                  <div class="product-details">
+                    <h3 class="product-name">Headphones</h3>
+                    <p class="pricess">
+                      <span class="new-price">$999.00</span>
+                      <span class="old-price">$3,299.00</span>
+                    </p>
+                    <div class="cart-options">
+                      <div class="quan-add">
+                        <div class="quantity">
+                          <div class="quantity-number">1</div>
+                          <div class="quantity-controls">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                        <button class="add-t-cart">ADD TO CART</button>
+                      </div>
+                      <div class="icns">
+                        <i class="fas fa-heart wishlist-icon"></i>
+                        <i class="fas fa-exchange-alt compare-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="buy-now">
+                      <img src="images/noun-dollar-918997.png" loading="lazy" alt="Dollar Icon" width="20px"
+                        height="20px" />
+                      Buy Now
+                    </div>
+                    <div class="question">? Question</div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+              <li class="splide__slide">
+                <div class="prd-card">
+                  <div class="custom-label3">FREE</div>
+                  <div class="custom-label4">PRE-ORDER</div>
+
+
+                  <div class="prd-image">
+                    <img src="images/apple-30310_1280.png" alt="Headphones" />
+                  </div>
+                  <div class="mid">
+                    <h4 class="brnd">Ericksson</h4>
+                    <h4 class="model">Model 519</h4>
+                  </div>
+                  <div class="product-details">
+                    <h3 class="product-name">Headphones</h3>
+                    <p class="pricess">
+                      <span class="new-price">$999.00</span>
+                      <span class="old-price">$3,299.00</span>
+                    </p>
+                    <div class="cart-options">
+                      <div class="quan-add">
+                        <div class="quantity">
+                          <div class="quantity-number">1</div>
+                          <div class="quantity-controls">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                        <button class="add-t-cart">ADD TO CART</button>
+                      </div>
+                      <div class="icns">
+                        <i class="fas fa-heart wishlist-icon"></i>
+                        <i class="fas fa-exchange-alt compare-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="buy-now">
+                      <img src="images/noun-dollar-918997.png" loading="lazy" alt="icon" width="20px" height="20px" />
+                      Buy Now
+                    </div>
+                    <div class="question">? Question</div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="splide__slide">
+                <div class="prd-card">
+                  <div class="custom-label5">PRE-ORDER</div>
+                  <div class="hot-badge1">HOT</div>
+                  <div class="prd-image">
+                    <img src="images/apple-30310_1280.png" loading="lazy" alt="Headphones" />
+                  </div>
+                  <div class="mid">
+                    <h4 class="brnd">Ericksson</h4>
+                    <h4 class="model">Model 519</h4>
+                  </div>
+                  <div class="product-details">
+                    <h3 class="product-name">Headphones</h3>
+                    <p class="pricess">
+                      <span class="new-price">$999.00</span>
+                      <span class="old-price">$3,299.00</span>
+                    </p>
+                    <div class="cart-options">
+                      <div class="quan-add">
+                        <div class="quantity">
+                          <div class="quantity-number">1</div>
+                          <div class="quantity-controls">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                        <button class="add-t-cart">ADD TO CART</button>
+                      </div>
+                      <div class="icns">
+                        <i class="fas fa-heart wishlist-icon"></i>
+                        <i class="fas fa-exchange-alt compare-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="buy-now">
+                      <img src="images/noun-dollar-918997.png" loading="lazy" alt="" width="20px" height="20px" />
+                      Buy Now
+                    </div>
+                    <div class="question">? Question</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+        <div class="fea-prd-slider-dots">
+         </div>
+
+
+        <!-- //create a buttton with the inside trext "SEE ALL Products" -->
+
+      </div>
+      <div>
+        <button class="btn-see">SEE ALL PRODUCTS <i class="fa-sharp fa-solid fa-arrow-right-long"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------Featured category------------ -->
+
+
+
+
+
+
+  <section class="categoryyy why-buy">
+    <h2>Featured Category</h2>
+    <p class="description">
+      Easily create category-based modules and display products from specific categories or brands only.
+      The advanced page builder allows you to create any grid layout with full control at any breakpoint.
+    </p>
+
+    <div class="wrapper">
+      <!-- <div class="category-container">
+          <div class="category-sidebar">
+            <h3>Fashion</h3>
+            <div class="underline"></div>
+            <img src="images/fashion.jpg" alt="Fashion">
+            <ul>
+              <li>Accessories</li>
+              <li>Dresses</li>
+              <li>Pants</li>
+              <li>T-Shirts</li>
+              <li><a href="#">See all in Fashion</a></li>
+            </ul>
+          </div>
+
+          <div class="fashion-products">
+            <h3 class="section-title">New in Fashion</h3>
+            <div class="underline"></div>
+
+            <div class="products-grid">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="images/fashion.jpg" alt="Bodycorn Dress">
+                  <div class="badge red">2-3 DAYS</div>
+                  <div class="badge blue">NEW</div>
+                </div>
+                <div class="prd-img-details">
+                  <h4><a href="#">Bodycorn Dress</a></h4>
+                  <div class="price">$399.00</div>
+                </div>
+                <div class="add-to-cart-container">
+                  <button class="cart-btn">Add to Cart</button>
+                  <div class="icn2">
+                    <div class="icon-container">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-exchange-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+           
+
+             
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+        </div> -->
+      <div class="categories-container">
+        <div class="fashion-category">
+          <div class="title">
+            <div>Fashion</div>
+            <div class="underline"></div>
+          </div>
+          <div class="img-container">
+            <img src="images/turtleneck.jpg" loading="lazy" alt="category-image">
+          </div>
+          <div class="content">
+            <div>Accessories</div>
+            <div>Dresses</div>
+            <div>Pants</div>
+            <div>T-Shirts</div>
+          </div>
+        </div>
+        <div class="new-fashion-container">
+          <div class="title">
+            <div>New Fashion</div>
+            <div class="underline"></div>
+          </div>
+          <div class="new-fashion-card-container">
+
+            <div class="wrap-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="images/turtleneck.jpg" loading="lazy" alt="category-image">
+                </div>
+                <div class="title">Bodycord Dress</div>
+                <div class="price">$399.00</div>
+              </div>
+              <div class="card">
+                <div class="img-container">
+                  <img src="images/turtleneck.jpg" loading="lazy" alt="category-image">
+                </div>
+                <div class="title">Bodycord Dress</div>
+                <div class="price">$399.00</div>
+              </div>
+            </div>
+            <div class="wrap-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="images/turtleneck.jpg" loading="lazy" alt="category-image">
+                </div>
+                <div class="title">Bodycord Dress</div>
+                <div class="price">$399.00</div>
+              </div>
+              <div class="card">
+                <div class="img-container">
+                  <img src="images/turtleneck.jpg" loading="lazy" alt="category-image">
+                </div>
+                <div class="title">Bodycord Dress</div>
+                <div class="price">$399.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <!-- Shop By brand -->
+
+
+  <section class="brand-section">
+    <h2>Shop by Brand</h2>
+    <div class="wrapper">
+      <div id="brand-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image1.png" alt="Brand 1"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image2.png" alt="Brand 2"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image3.png" alt="Brand 3"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image4.png" alt="Brand 4"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image5.png" alt="Brand 5"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image6.png" alt="Brand 6"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image7.png" alt="Brand 7"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image8.png" alt="Brand 8"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image9.png" alt="Brand 9"></div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image1.png" alt="Brand 1"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image2.png" alt="Brand 2"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image3.png" alt="Brand 3"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image4.png" alt="Brand 4"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image5.png" alt="Brand 5"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image6.png" alt="Brand 6"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image7.png" alt="Brand 7"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image8.png" alt="Brand 8"></div>
+            </li>
+            <li class="splide__slide">
+              <div class="brand"><img src="images/image9.png" alt="Brand 9"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Improved Gallery Module -->
+
+  <section class="brand-section2">
+    <h2>Improved Gallery Module</h2>
+
+    <p>
+      The Gallery Module supports images , videos and can also act as banners that can point to any other page or open
+      other Popup modules. Create different modules with images , videos , banners or a combination of all. Add your
+      modules on any page in any grid format.
+    </p>
+    <div class="wrapper">
+      <div class="brand-slider2">
+        <div class="brand2"><img src="images/blonde-woman.jpg" alt="Brand 1"></div>
+        <div class="brand2"><img src="images/3756505.jpg" alt="Brand 2"></div>
+        <div class="brand2"><img src="images/young-fashion-man-sitting-white-rectangle.jpg" alt="Brand 3"></div>
+        <div class="brand2"><img
+            src="images/young-man-black-glasses-wearing-grey-polo-shirt-happy-positive-pointing-with-fingers-side-pink.jpg"
+            alt="Brand 4"></div>
+        <div class="brand2"><img src="images/blonde-young-woman-elegant-green-dress.jpg" alt="Brand 5"></div>
+        <div class="brand2"><img src="images/portrait-young-stylish-indian-man-model-pose-street.jpg" alt="Brand 6">
+        </div>
+        <div class="brand2"><img src="images/image7.png" alt="Brand 7"></div>
+        <div class="brand2"><img src="images/image9.png" alt="Brand 8"></div>
+        <div class="brand2"><img src="images/image7.png" alt="Brand 7"></div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <!-------------------From our Blog----------------- -->
+
+  <section class="blog-section">
+    <h2>From our Blog</h2>
+    <p>
+      Journal comes with its own simple yet powerful blog. With the new
+      advanced typography styles your post page design will be unmatched.
+    </p>
+
+    <div class="buttons">
+      <button class="active">LATEST POSTS</button>
+      <button>MOST READ</button>
+    </div>
+
+    <div class="blog-container">
+      <div class="wrapper">
+        <div class="blog-flex">
+          <div class="blog-card">
+            <div class="blog-data">
+              <div class="blog-date1">
+                <span class="date">02</span> <span class="month">Aug</span>
+              </div>
+              <img src="images/journal.jpg" alt="Blog Image 1" />
+              <div class="meta">
+                <span>👤 admin</span>
+                <span>💬 38</span>
+                <span>👁 19340</span>
+              </div>
+            </div>
+            <div class="blog-info">
+              <h3><b>Journal Blog is Here</b></h3>
+              <p>
+                The Journal 3 blog has been greatly improved and it now comes
+                with the most advanced set of typography tools, including custom
+                drop-cap support as well as optional newspaper-like fluid
+                columns. You can break up the page in up to 4 columns and change
+                the configuration per breakpoint for the best article layout on
+                any screen width. The Journal blog i..
+              </p>
+              <a href="#">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-data">
+              <div class="blog-date2">
+                <span class="date">02</span> <span class="month">Aug</span>
+              </div>
+              <img src="images/leather-bag.jpg" alt="Blog Image 2" />
+              <div class="meta">
+                <span>👤 admin</span>
+                <span>💬 17</span>
+                <span>👁 7341</span>
+              </div>
+            </div>
+            <div class="blog-info">
+              <h3><b>Best Leather Bags</b></h3>
+              <p>
+                Best Opencart theme options you can find in any theme? Decide
+                for yourself by visiting one our demo admin, user/pass:
+                demo/demo. The Journal 3 blog has been greatly improved and it
+                now comes with the most advanced set of typography tools,
+                including custom drop-cap support as well as optional
+                newspaper-like fluid columns. You can break up the page i..
+              </p>
+              <a href="#">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-data">
+              <div class="blog-date3">
+                <span class="date">02</span> <span class="month">Aug</span>
+              </div>
+              <img src="images/post.jpg" alt="Blog Image 3" />
+              <div class="meta">
+                <span>👤 admin</span>
+                <span>💬 47</span>
+                <span>👁 6264</span>
+              </div>
+            </div>
+            <div class="blog-info">
+              <h3><b>Another Blog Post</b></h3>
+              <p>
+                Another blog post. Write unlimited blog articles, or have
+                someone write them for you with partial admin access. The
+                Journal 3 blog has been greatly improved and it now comes with
+                the most advanced set of typography tools, including custom
+                drop-cap support as well as optional newspaper-like fluid
+                columns. You can break up the page in up to 4 column..
+              </p>
+              <a href="#">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <!-- <span class="dot"></span> -->
+    </div>
+    <div class="pagination">
+      <span class="active"></span>
+      <span></span>
+    </div>
+  </section>
+
+
+  <!-- -----------------------TESTIMONIALS---------------------- -->
+  <section class="testimonials">
+    <div class="wrapper">
+      <h2>What are people saying about us</h2>
+      <div class="underline-testimonials"></div>
+
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p>
+            I've purchased hundreds and hundreds of files over the past 7
+            years. But there is nothing close to this support and
+            professionalism. Not only is the theme simple, useful, and modern,
+            but again the support is remarkable. Very happy I got this theme!
+            Thank you!
+          </p>
+          <p class="author">- charlibaltimore</p>
+        </div>
+
+        <div class="testimonial">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p>
+            I am a web developer for many years. I haven't seen anything
+            clear, clean-coded like Journal. It makes my life so much easier.
+            Thanks for the great work you have done.
+          </p>
+          <p class="author">- chromebandit</p>
+        </div>
+
+        <div class="testimonial">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p>
+            Great toolkit for Opencart. As a base platform, Opencart can be a
+            nightmare to modify and get looking good. Journal takes away all
+            the pain.
+          </p>
+          <p class="author">- kellyhorne</p>
+        </div>
+      </div>
+
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+  </section>
+  <!-- --------------Most Viewed Section---------------------->
+
+
+  <section class="popular-products">
+    <div class="container">
+        <div class="wrapper">
+            <div class="header-section">
+                <h2 class="title">MOST VIEWED</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="product-slider splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                        <li class="splide__slide item-box">
+                            <div class="item-content">
+                                <div class="item-thumb"><img src="images/sunglass.jpg" alt="Oversized Sunglasses">
+                                </div>
+                                <div class="item-details">
+                                    <div class="item-name">Oversized Sunglasses For Lon...</div>
+                                    <div class="item-price">$397.00</div>
+                                    <div class="item-icons">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-face-smile"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide item-box">
+                            <div class="item-content">
+                                <div class="item-thumb"><img src="images/headphones.jpg" alt="Headphones"></div>
+                                <div class="item-details">
+                                    <div class="item-name">Headphones</div>
+                                    <div class="item-price">
+                                        <span class="discount">$999.00</span>
+                                        <span class="original-price">$3,299.00</span>
+                                    </div>
+                                    <div class="item-icons">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-face-smile"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide item-box">
+                            <div class="item-content">
+                                <div class="item-thumb"><img src="images/headphones.jpg" alt="Women's Maria Pump">
+                                </div>
+                                <div class="item-details">
+                                    <div class="item-name">Women's Maria Pump</div>
+                                    <div class="item-price">$425.00</div>
+                                    <div class="item-icons">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-face-smile"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide item-box">
+                            <div class="item-content">
+                                <div class="item-thumb"><img src="images/headphones.jpg" alt="Sport Watch"></div>
+                                <div class="item-details">
+                                    <div class="item-name">Sport Watch</div>
+                                    <div class="item-price">$209.15</div>
+                                    <div class="item-icons">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-face-smile"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="splide__pagination custom-nav"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Social Media Icons -->
+    <div class="social-media">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+      </div>
+
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-container">
+      <div class="wrapper">
+        <div class="footer-flex">
+          <div class="footer-column">
+            <h2>About Us</h2>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Custom Links</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h2>Customer Service</h2>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">Unlimited Links</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h2>My Account</h2>
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Gift Certificates</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column newsletter">
+            <h2>Newsletter</h2>
+            <p>Stay up to date with news and promotions by signing up for our newsletter</p>
+            <div class="newsletter-box">
+              <input type="email" placeholder="Your email">
+              <button><i class="fas fa-envelope"></i> Send</button>
+            </div>
+            <label><input type="checkbox"> I have read and agree to the <a href="#">Privacy Policy</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="bottom-footer">
+      <div class="wrapper">
+        <div class="bottom-flex">
+          <p>Copyright © 2014, Your Store, All Rights Reserved</p>
+          <div class="payment-icons">
+            <img src="images/visa_1148175.png" alt="Visa">
+            <img src="images/american-express_349228.png" alt="American Express">
+            <img src="images/card_14034951.png" alt="MasterCard">
+            <img src="images/online_13651589.png" alt="Discover">
+            <img src="images/paypal_14881340.png" alt="PayPal">
+            <img src="images/bank-card_10089982.png" alt="Stripe">
+          </div>
+          <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      let splide = new Splide("#hero-slider", {
+        type: "loop",
+        start: 0,
+        perPage: 1,
+        perMove: 1,
+        pagination: true,
+        arrows: true,
+        autoplay: false,
+        interval: 3000,
+        rewind: false,
+        speed: 600,
+        updateOnMove: true,
+    });
+
+    splide.on("mounted", function () {
+        document.querySelector("#hero-slider").style.visibility = "visible"; // Ensure visibility
+    });
+
+    splide.mount();
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // Initialize Category Slider
+
+      var categorySlider = new Splide("#category-slider", {
+    type: "loop",
+    perPage: 5,
+    perMove: 1,
+    gap: "8px",
+    breakpoints: {
+      1280: { perPage: 4 },
+      1024: { perPage: 3 },
+      768: { perPage: 2 },
+      480: { perPage: 1 },
+    },
+    pagination: false, // Disable Splide's default pagination
+    arrows: true,
+    autoplay: true,
+    interval: 3000,
+  });
+
+  categorySlider.mount();
+
+  // ✅ Initialize Featured Product Slider
+  var feaPrdSlider = new Splide("#fea-prd-slider", {
+    type: "loop",
+    perPage: 4,
+    perMove: 1,
+    gap: "8px",
+    breakpoints: {
+      1280: { perPage: 3 },
+      1024: { perPage: 2 },
+      768: { perPage: 1 },
+    },
+    pagination: false, // Disable Splide's default pagination
+    arrows: true,
+    autoplay: true,
+    interval: 3000,
+  });
+
+  feaPrdSlider.mount();
+
+  createCustomPagination(categorySlider, ".category-slider-dots");
+
+  createCustomPagination(feaPrdSlider, ".fea-prd-slider-dots");
+
+  function createCustomPagination(slider, dotContainerClass) {
+    var dotsContainer = document.querySelector(dotContainerClass);
+
+    if (dotsContainer) {
+      dotsContainer.innerHTML = ""; // Clear existing dots
+
+      var totalSlides = slider.length;
+
+      for (let i = 0; i < totalSlides; i++) {
+        let dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (i === 0) dot.classList.add("active");
+
+        // ✅ Click Event to Navigate Slides
+        dot.addEventListener("click", function () {
+          slider.go(i);
+        });
+
+        dotsContainer.appendChild(dot);
+      }
+
+      slider.on("move", function (newIndex) {
+        document.querySelectorAll(dotContainerClass + " .dot").forEach((dot, index) => {
+          dot.classList.toggle("active", index === newIndex);
+        });
+      });
+    }
+  } 
+      var brandsection = new Splide('#brand-slider', {
+          type: 'loop',
+          perPage: 9, /* Show 9 images above 1024px */
+          perMove: 9,
+          gap: '5px',
+          pagination: true,
+          breakpoints: {
+            1024: { perPage: 6, perMove: 6 }, /* Show 6 images on tablets */
+            768: { perPage: 4, perMove: 4 },  /* Show 4 images on small tablets */
+            480: { perPage: 2, perMove: 2 }   /* Show 2 images on mobile */
+          }
+        });
+
+        brandsection.mount();
+
+
+        var brandsection2 = new Splide(".blog-slider", {
+          type: "loop",
+          perPage: 3,       // 3 slides on large screens
+          perMove: 1,       // Moves 1 slide per click
+          gap: "20px",      // Space between slides
+          autoplay: true,   // Auto-scroll enabled
+          interval: 3000,   // Auto-scroll every 3 sec
+          arrows: true,     // Left/Right navigation arrows
+          pagination: true, // Enables pagination dots
+          speed: 600,       // Slide transition speed
+          breakpoints: {
+            1024: { perPage: 2 }, // Tablets (show 2 slides)
+            768: { perPage: 1 },  // Mobile (show 1 slide)
+          },
+        })
+
+        brandsection2.mount();
+
+
+      });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
