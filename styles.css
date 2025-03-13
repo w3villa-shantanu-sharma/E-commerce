@@ -1157,66 +1157,57 @@ body {
 }
 
 /* ---------------------------------------------------------- */
-
 /* Why Buy Section */
 .why-buy {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 15px;
   background-color: #e5eaedba;
 }
 
 .why-buy h2 {
-  /* font-size: 28px; */
+  font-size: 34px;
   font-weight: 600;
   color: #222;
   margin-bottom: 10px;
 }
 
-
-
-.why-buy p a {
-  color: #2b2be0;
-  text-decoration: underline;
-  font-weight: 600;
+.why-buy p {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
 }
 
-/* Categories Section */
+/* Category Buttons */
 .categories1 {
   display: flex;
   justify-content: center;
-  gap: 0px;
-  /* Removed gap for proper alignment */
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 20px 0;
-  border-radius: 3px;
-  text-wrap: nowrap;
   padding: 20px 0;
-  height: 80px;
-  width: 50%;
-  /* overflow: hidden; */
+  width: 80%;
 }
 
 .categories1 button {
-  /* flex: 1; */
-  padding: 1px 8px;
-  border: 0.4px solid #8080801f;
+  padding: 10px 16px;
+  border: 1px solid #8080801f;
   background: #d9d7d747;
   font-size: 14px;
   font-weight: 600;
   color: #333;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
-  border-radius: 0;
-  /* Ensures no border radius */
 }
 
-/* Active Button Styling */
 .categories1 .active1 {
   background-color: blue;
   color: white;
-  padding: 1% 2.5%;
+  padding: 10px 16px;
   border-radius: 3px;
   position: relative;
 }
@@ -1234,49 +1225,30 @@ body {
   border-top: 15px solid blue;
 }
 
-
-.category-list {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  text-wrap: nowrap;
-  margin-top: 18px;
-}
-
 /* Category Slider */
 #category-slider {
   overflow: hidden;
   padding-bottom: 20px;
+  width: 100%;
+  max-width: 1280px;
+}
+.why-buy  #category-slider .splide__slide{
+  width: calc(46.3333% - 40.33333px);
 }
 
-/* Category List */
-#category-slider .splide__list {
+ #category-slider .splide__track {
+  overflow: visible;
+}
+
+.category-slider .splide__list {
   display: flex;
-  /* gap: 10px; */
+  gap: 5px;
 }
 
-.splide__pagination {
-  display: none;
-  /* Hide pagination dots */
-}
-
-.splide__pagination .splide__pagination__page.is-active {
-  background: #db5801 !important;
-  /* Keep only active color */
-}
-
-.why-buy .splide__arrow--prev {
-  left: 0em;
-}
-
-.why-buy .splide__arrow--next {
-  right: 4em;
-}
-
+/* Category Box */
 .category {
-  width: 250px;
-  height: 320px;
+  width: 220px;
+  height: 300px;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -1302,75 +1274,114 @@ body {
   transform: translateX(-50%);
   background: rgba(212, 209, 209, 0.9);
   padding: 5px 10px;
-  /* border-radius: 3px; */
   font-size: 15px;
   font-weight: 500;
-  text-wrap: nowrap;
 }
 
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 15px;
+/* Hide default Splide pagination */
+.splide__pagination {
+  display: none;
 }
 
-.dot {
-  width: 9px;
-  height: 9px;
-  background: #a9a5a5;
+/* Arrows */
+.splide__arrow {
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
-}
-
-.dot.active {
-  background: #db5801;
-  transform: scale(1.2);
-  /* Slight enlargement for active dot */
-}
-
-
-.why-buy h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
+  width: 40px;
+  height: 40px;
   display: flex;
-  justify-content: center;
-  background: red;
-  margin: 4% auto 0;
-}
-
-.why-buy {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding-top: 50px;
+  justify-content: center;
 }
 
-.why-buy h2 {
-  font-size: 34px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 10px;
+.why-buy .splide__arrow--prev {
+  left: -3.5px;
 }
 
-.why-buy p {
-  font-size: 16px;
-  color: #666;
-  max-width: 1000px;
-  margin: 10px auto;
-  line-height: 1.6;
-  padding: 0 15px;
-
+.why-buy .splide__arrow--next {
+  right: -3px;
 }
 
-.why-buy p a {
-  color: #2b2be0;
-  text-decoration: underline;
-  font-weight: 600;
+/* 🔹 RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1280px) {
+  .category {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category {
+    width: 180px;
+    height: 260px;
+  }
+
+  .why-buy .splide__arrow--prev {
+    left: 5px;
+  }
+
+  .why-buy .splide__arrow--next {
+    right: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories1 {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .categories1 button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .category {
+    width: 160px;
+    height: 240px;
+  }
+
+  .splide__arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .why-buy .splide__arrow--prev {
+    left: 5px;
+  }
+
+  .why-buy .splide__arrow--next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories1 {
+    width: 100%;
+  }
+
+  .categories1 button {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .category {
+    width: 140px;
+    height: 220px;
+  }
+
+  .splide__arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .why-buy .splide__arrow--prev {
+    left: -5px;
+  }
+
+  .why-buy .splide__arrow--next {
+    right: -5px;
+  }
 }
 
 /* -------------------------Featured Products------------------- */
@@ -2349,10 +2360,10 @@ body {
 
 /* Improved Gallery Modules */
 
-
+/* Brand Section - Responsive Styling */
 .brand-section2 {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 20px;
   background-color: rgba(58, 72, 85, 1);
 }
 
@@ -2370,61 +2381,143 @@ body {
   width: 60px;
   height: 2px;
   background: #e26734;
-  margin: 20px auto 20px auto;
+  margin: 20px auto;
   border-radius: 2px;
 }
 
 .brand-section2 p {
   color: #b1afaf;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  padding: 0 15px;
+}
+
+/* Brand Slider Wrapper */
+.wrapper {
   max-width: 1200px;
-  padding: 0px 10px;
-  margin: 10px auto;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Brand Slider */
 .brand-slider2 {
   display: flex;
-  justify-content: center;
-  gap: 22px;
-  /* Space between items */
+  gap: 15px; /* Adjust gap between items */
   overflow-x: auto;
-  /* Horizontal scroll for small screens */
   padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
 }
 
-/* Brand Logos */
+/* Brand Images Container */
 .brand-slider2 .brand2 {
+  flex: 0 0 auto;
   background: #ffffff;
-  border-radius: 7px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 0px;
-  transition: transform 0.3s sease-in-out;
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  scroll-snap-align: center;
 }
 
+/* Hover Effect */
 .brand-slider2 .brand2:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
-/* Brand Logos Images */
+/* Brand Images */
 .brand-slider2 .brand2 img {
-  color: #222;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
+/* Custom Scrollbar for better UX */
+.brand-slider2::-webkit-scrollbar {
+  height: 6px;
+}
 
+.brand-slider2::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 10px;
+}
 
+.brand-slider2::-webkit-scrollbar-thumb {
+  background: #e26734;
+  border-radius: 10px;
+}
 
+/* 🔹 RESPONSIVE FIXES */
+@media (max-width: 1024px) {
+  .brand-section2 {
+    padding: 40px 15px;
+  }
+
+  .brand-section2 h2 {
+    font-size: 30px;
+  }
+
+  .brand-section2 p {
+    font-size: 16px;
+  }
+
+  .brand-slider2 {
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .brand-slider2 .brand2 {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-section2 h2 {
+    font-size: 26px;
+  }
+
+  .brand-section2 p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .brand-slider2 .brand2 {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-section2 {
+    padding: 30px 10px;
+  }
+
+  .brand-section2 h2 {
+    font-size: 24px;
+  }
+
+  .brand-section2 p {
+    font-size: 14px;
+  }
+
+  .brand-slider2 {
+    gap: 8px;
+  }
+
+  .brand-slider2 .brand2 {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 
 
@@ -3189,8 +3282,10 @@ h4 a {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   /* margin: 0 80px; */
   padding: 20px;
+  gap: 20px;
 }
 
 .footer-flex {
@@ -3249,12 +3344,13 @@ h4 a {
   margin-top: 22px;
   text-wrap: wrap;
   line-height: 1;
+  word-wrap: break-word;
 }
 
 /* Newsletter Section */
 .newsletter {
-  max-width: 300px;
-  text-wrap: nowrap;
+  max-width: 100%;
+  /* text-wrap: nowrap; */
 }
 
 .newsletter h2 {
@@ -3268,11 +3364,14 @@ h4 a {
 .newsletter-box {
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 5px;
   background: white;
+  max-width: 450px;
 }
 
 .newsletter-box input {
@@ -3280,6 +3379,7 @@ h4 a {
   padding: 8px;
   border: none;
   outline: none;
+  min-width: 0;
 }
 
 .newsletter-box button {
@@ -3291,6 +3391,7 @@ h4 a {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  white-space: nowrap;  
 }
 
 .newsletter-box button i {
@@ -3387,6 +3488,26 @@ label a {
   .payment-icons img {
     height: 40px;
   }
+
+  .newsletter-box {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .newsletter-box input {
+    font-size: 14px;
+  }
+
+  .newsletter-box button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  label {
+    justify-content: center;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -3480,6 +3601,25 @@ label a {
   .footer-column ul li a {
     font-size: 16px;
     text-decoration: none; /* Ensure no underline */
+  }
+
+  newsletter {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .newsletter-box {
+    width: 100%;
+  }
+
+  .newsletter-box input,
+  .newsletter-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 12px;
   }
 
   /* Bottom footer centered */
