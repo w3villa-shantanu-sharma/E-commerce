@@ -2405,7 +2405,7 @@ body {
 .brand-slider2 {
   display: flex;
   gap: 15px; /* Adjust gap between items */
-  overflow-x: auto;
+  /* overflow-x: auto; */
   padding: 20px 0;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
