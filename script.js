@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var productSlider = new Splide(".product-slider", {
         type: "loop",
         start: 0,
+        center: true,
         perPage: 4,
         perMove: 2,
         gap: "10px",
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         breakpoints: {
             768: {
                 perPage: 2,
-                pagination: true,
+                // pagination: true,
                 gap: "10px",
             },
             480: {
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         type: "loop",
         perPage: 3,
         perMove: 1,
+        center: true,
         gap: "30px",
         arrows: true,
         pagination: false, // Custom pagination will be used
