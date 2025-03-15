@@ -2116,7 +2116,7 @@ body {
 
 .blog-section .splide__list {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .blog-card {
@@ -2391,7 +2391,7 @@ body {
 
 /* Brand Slider Wrapper */
 .brand-section2 .wrapper {
-  max-width: 1250px;
+  /* max-width: 1250px; */
   margin: 0 auto;
   /* overflow: hidden; */
 }
@@ -2399,7 +2399,7 @@ body {
 /* Brand Slider */
 .brand-slider2 {
   display: flex;
-  gap: 15px; /* Adjust gap between items */
+  gap: 25px; /* Adjust gap between items */
   overflow-x: auto;
   padding: 20px 0;
   scroll-snap-type: x mandatory;
@@ -3090,11 +3090,7 @@ h4 a {
   padding: 30px 0;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+
 
 /* Header */
 .header-section {

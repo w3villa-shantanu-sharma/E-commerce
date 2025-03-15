@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var productSlider = new Splide(".product-slider", {
         type: "loop",
         start: 0,
-        center: true,
+        // center: true,
         perPage: 4,
         perMove: 2,
-        gap: "10px",
+        gap: "0px",
         pagination: false, // Custom pagination will be used
         arrows: false,
         breakpoints: {
