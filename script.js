@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 3,
         perMove: 1,
         center: true,
-        gap: "30px",
+        gap: "32px",
         arrows: true,
         pagination: false, // Custom pagination will be used
         speed: 800,
