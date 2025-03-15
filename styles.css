@@ -1226,11 +1226,11 @@ body {
   overflow: hidden;
   padding-bottom: 20px;
   width: 100%;
-  max-width: 1280px;
+  /* max-width: 1400px; */
 }
-.why-buy  #category-slider .splide__slide{
+/* .why-buy  #category-slider .splide__slide{
   width: calc(46.3333% - 40.33333px);
-}
+} */
 
  #category-slider .splide__track {
   overflow: visible;
@@ -1389,17 +1389,14 @@ body {
   text-align: center;
 }
 
-.features-prducts .wrapper {
-  max-width: 1350px !important;
-  padding: 0px;
-}
+
 
 
 /* Categories Section */
 .categories {
   display: flex;
   justify-content: center;
-  gap: 0px;
+  gap: 1px;
   /* Removed gap for proper alignment */
   margin: 20px auto;
   border-radius: 3px;
