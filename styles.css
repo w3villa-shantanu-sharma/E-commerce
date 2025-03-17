@@ -649,7 +649,7 @@ body {
 
   .blog-btn {
     font-size: 14px;
-    padding: 12px 16px;
+    padding: 17px 16px;
   }
 }
 
@@ -1536,16 +1536,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   background: white;
-  max-width: 320px;
+  max-width: 360px;
   /* padding: 15px; */
 }
 
- /* @media (max-width: 1600px) {
-  .category-list .prd-card {
-    /* flex: 0 0 90%; */
-    /* max-width: 370px; */
-  /* } */
-/* }  */ */
+
 
 /* Custom Label */
 .custom-label {
@@ -1899,8 +1894,15 @@ body {
   border: none;
   padding: 8px 12px;
   cursor: pointer;
-  /* font-weight: bold; */
+  font-weight: bold;
   transition: 0.3s;
+}
+
+.buy-now:hover {
+  background: rgb(234, 240, 245);
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
 }
 
 .buy-now img {
@@ -1913,12 +1915,18 @@ body {
   color: rgb(110, 106, 106);
   border: none;
   padding: 8px;
-  border-radius: 50%;
+  border-radius: 4%;
   cursor: pointer;
   font-weight: bold;
   font-size: 14px;
   transition: 0.3s;
 }
+
+.question:hover {
+  background: rgb(234, 240, 245);
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} 
 
 
 .btn-see {
@@ -1936,6 +1944,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-see:hover {  
+  background: rgb(22, 99, 161);
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn-see i {
@@ -1979,9 +1993,19 @@ body {
   }
 }
 
+@media(max-width:1300px){
+  .category-list .prd-card {
+    max-width: 360px !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .cart-options {
     gap: 6px;
+  }
+
+  .category-list .prd-card {
+    max-width: 400px !important;
   }
 
   .quantity-number {
@@ -2093,15 +2117,15 @@ body {
 .blog-section p {
   color: #7e7e7e;
   font-weight: 500;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto 20px;
 }
 
-.buttons {
+.blog-section .buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  gap: 10px;
+  /* gap: 4px; */
 }
 
 .buttons button {
@@ -2113,6 +2137,7 @@ body {
   background-color: #b8b6b6;
   color: black;
   border-radius: 5px;
+
 }
 
 .buttons .active {
@@ -2144,15 +2169,15 @@ body {
 }
 
 .blog-card img {
-  width: 100%;
-  height: 300px;
+  max-width:  100%; ;
+  height: 100%;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .blog-info {
-  padding: 15px;
+  padding: 38px 16px 0px 16px;
 }
 
 .blog-info h3 {
@@ -2177,15 +2202,18 @@ body {
 
 .blog-data {
   position: relative;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .blog-date1,
 .blog-date2,
 .blog-date3 {
+
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 14px;
-  left: 16px;
+  top: 8px;
+  left: 10px;
   background: rgb(7, 7, 139);
   color: white;
   padding: 5px 10px;
@@ -2223,6 +2251,13 @@ body {
 .dot.active {
   background-color: #ff6600;
 }
+
+.blog-section .splide__slide{
+  margin-right: 26px !important;
+
+}
+
+
 
 /* Responsive Fix */
 @media (max-width: 1024px) {
