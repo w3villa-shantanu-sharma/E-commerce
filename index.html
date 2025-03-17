@@ -69,20 +69,20 @@
 
         <div class="nav-icons-mobile">
           <button class="hamburger-menu">
-              <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
           </button>
           <button class="search-icon">
-              <i class="fas fa-search"></i>
+            <i class="fas fa-search"></i>
           </button>
           <div class="nav-cartt">
-              <a href="#">
-                  <div class="cart-icon">
-                      <i class="fas fa-shopping-cart"></i>
-                  </div>
-              </a>
+            <a href="#">
+              <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </a>
           </div>
-      </div>
-        
+        </div>
+
         <div class="search-bar-wrapper">
           <div class="search-bar">
             <button class="all-button">
@@ -258,7 +258,7 @@
             <p>Free delivery over $100</p>
           </div>
         </div>
-  
+
         <div class="feature-item">
           <div class="icon-box">
             <i class="fas fa-undo-alt"></i>
@@ -268,7 +268,7 @@
             <p>Hassle free returns</p>
           </div>
         </div>
-  
+
         <div class="feature-item">
           <div class="icon-box">
             <i class="fas fa-shield-alt"></i>
@@ -278,7 +278,7 @@
             <p>Best security features</p>
           </div>
         </div>
-  
+
         <div class="feature-item">
           <div class="icon-box">
             <i class="fas fa-cube"></i>
@@ -291,7 +291,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- -------------------------------------------------------------------- -->
   <section class="why-buy">
     <h2>Why buy from us?</h2>
@@ -680,10 +680,19 @@
                 <div class="img-container">
                   <img src="images/turtleneck.jpg" loading="lazy" alt="category-image">
                   <div class="red">2-3 DAYS</div>
-                  <div class="blue">NEW</div> 
+                  <div class="blue">NEW</div>
                 </div>
                 <div class="title">Bodycord Dress</div>
                 <div class="price">$399.00</div>
+
+                <div class="btn-icon-div">
+                  <button class="btn-add">Add to Cart</button>
+                  <div class="heart-exchange">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-exchange-alt"></i>
+
+                  </div>
+                </div>
               </div>
               <div class="card">
                 <div class="img-container">
@@ -693,7 +702,18 @@
                 </div>
                 <div class="title">Bodycord Dress</div>
                 <div class="price">$399.00</div>
+
+                <div class="btn-icon-div">
+                  <button class="btn-add">Add to Cart</button>
+                  <div class="heart-exchange">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-exchange-alt"></i>
+
+                  </div>
+                </div>
               </div>
+
+
             </div>
             <div class="wrap-container">
               <div class="card">
@@ -705,6 +725,15 @@
                 </div>
                 <div class="title">Bodycord Dress</div>
                 <div class="price">$399.00</div>
+
+                <div class="btn-icon-div">
+                  <button class="btn-add">Add to Cart</button>
+                  <div class="heart-exchange">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-exchange-alt"></i>
+
+                  </div>
+                </div>
               </div>
               <div class="card">
                 <div class="img-container">
@@ -715,6 +744,15 @@
                 </div>
                 <div class="title">Bodycord Dress</div>
                 <div class="price">$399.00</div>
+
+                <div class="btn-icon-div">
+                  <button class="btn-add">Add to Cart</button>
+                  <div class="heart-exchange">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-exchange-alt"></i>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -734,7 +772,7 @@
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
-              <div class="brand"><img src="images/image1.png" alt="Brand 1"></div>
+              <div class="brand"><img src="images/image2.png" alt="Brand 1"></div>
             </li>
             <li class="splide__slide">
               <div class="brand"><img src="images/image2.png" alt="Brand 2"></div>
@@ -755,7 +793,7 @@
               <div class="brand"><img src="images/image7.png" alt="Brand 7"></div>
             </li>
             <li class="splide__slide">
-              <div class="brand"><img src="images/image8.png" alt="Brand 8"></div>
+              <div class="brand"><img src="images/image4.png" alt="Brand 8"></div>
             </li>
             <li class="splide__slide">
               <div class="brand"><img src="images/image9.png" alt="Brand 9"></div>
@@ -1243,12 +1281,16 @@
           });
         }
       }
+
+
       var brandsection = new Splide('#brand-slider', {
         type: 'loop',
         perPage: 9, /* Show 9 images above 1024px */
         perMove: 9,
         gap: '5px',
         pagination: true,
+        arrows: false,
+      
         breakpoints: {
           1024: { perPage: 6, perMove: 6 }, /* Show 6 images on tablets */
           768: { perPage: 4, perMove: 4 },  /* Show 4 images on small tablets */
