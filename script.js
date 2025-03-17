@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // center: true,
         perPage: 4,
         perMove: 2,
-        gap: "0px",
+        gap: "10px",
         pagination: false, // Custom pagination will be used
         arrows: false,
         breakpoints: {
@@ -48,18 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
     //  Custom Pagination for Testimonial Slider
     createCustomPagination(testimonialSlider, ".testimonial-dots");
 
-    setTimeout(() => {
-        testimonialSlider.refresh();
-    }, 200); // Delay helps in recalculating size correctly
+    // setTimeout(() => {
+    //     testimonialSlider.refresh();
+    // }, 100); // Delay helps in recalculating size correctly
 });
 
 /**
  * Function to create custom pagination
- */
-function createCustomPagination(slider, dotContainerSelector) {
+ */function createCustomPagination(slider, dotContainerSelector) {
     let dotsContainer = document.querySelector(dotContainerSelector);
-    let slideCount = slider.Components.Elements.slides.length;
-
+    let slideCount = slider.length;
     dotsContainer.innerHTML = '';
 
     for (let i = 0; i < slideCount; i++) {
@@ -73,11 +71,8 @@ function createCustomPagination(slider, dotContainerSelector) {
     let dots = dotsContainer.querySelectorAll(".dot");
     dots.forEach((dot) => {
         dot.addEventListener("click", function () {
-            let index = this.getAttribute("data-index");
+            let index = parseInt(this.getAttribute("data-index"));
             slider.go(index);
-
-            dots.forEach((d) => d.classList.remove("active"));
-            this.classList.add("active");
         });
     });
 
@@ -85,4 +80,9 @@ function createCustomPagination(slider, dotContainerSelector) {
         dots.forEach((d) => d.classList.remove("active"));
         dots[newIndex].classList.add("active");
     });
+
+    // Optional: Refresh to re-render
+    setTimeout(() => {
+        slider.refresh();
+    }, 100);
 }

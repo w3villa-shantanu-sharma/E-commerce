@@ -3177,10 +3177,10 @@ h4 a {
 /* Product Box */
 .item-box {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 1px;
   padding: 15px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
@@ -3200,7 +3200,9 @@ h4 a {
 /* Product Content */
 .item-content {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: flex-start; */
   max-width: 200px;
   gap: 4px;
 }
@@ -3249,6 +3251,11 @@ h4 a {
 .item-icons i:hover {
   color: #ff6200;
 }
+/* 
+ .popular-products .splide__list {
+  transform: translateX(0%) !important;
+} */
+
 
 /* Hide Pagination on Desktop */
 @media (min-width: 1024px) {
