@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
         type: "loop",
         perPage: 3,
         perMove: 1,
-        center: true,
+        focus: 'center',
         gap: "32px",
-        arrows: true,
+        arrows: false,
         pagination: false, // Custom pagination will be used
         speed: 800,
         autoplay: true,
@@ -42,11 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     testimonialSlider.mount(); 
 
-    // ✅ Custom Pagination for Product Slider
+    //  Custom Pagination for Product Slider
     createCustomPagination(productSlider, ".product-dots");
 
-    // ✅ Custom Pagination for Testimonial Slider
+    //  Custom Pagination for Testimonial Slider
     createCustomPagination(testimonialSlider, ".testimonial-dots");
+
+    setTimeout(() => {
+        testimonialSlider.refresh();
+    }, 200); // Delay helps in recalculating size correctly
 });
 
 /**
@@ -54,7 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function createCustomPagination(slider, dotContainerSelector) {
     let dotsContainer = document.querySelector(dotContainerSelector);
-    let slideCount = slider.length;
+    let slideCount = slider.Components.Elements.slides.length;
+
+    dotsContainer.innerHTML = '';
 
     for (let i = 0; i < slideCount; i++) {
         let dot = document.createElement("span");

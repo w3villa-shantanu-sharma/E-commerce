@@ -3132,6 +3132,9 @@ h4 a {
   margin-bottom: 5px;
 }
 
+
+
+
 /* General Container */
 .popular-products {
   background-color: #232a45;
@@ -3191,13 +3194,14 @@ h4 a {
 .item-thumb img {
   width: 80px;
   height: auto;
-  display: block;
+  /* display: block; */
 }
 
 /* Product Content */
 .item-content {
   display: flex;
   align-items: center;
+  max-width: 200px;
   gap: 4px;
 }
 
