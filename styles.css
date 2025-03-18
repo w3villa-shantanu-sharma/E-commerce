@@ -534,7 +534,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px 0; */
+  padding: 0 10px;
 }
 
 /* Left Section - Category Button */
@@ -549,14 +549,15 @@ body {
   background: yellow;
   color: black;
   border: none;
-  padding: 18px 20px;
+  padding: 18px 14px;
   cursor: pointer;
   font-weight: bold;
   display: flex;
   align-items: center;
   gap: 5px;
   height: 100%;
-  min-width: 190px;
+  min-width: 150px;
+  font-size: 12px;
 }
 
 /* Sale Badge */
@@ -576,15 +577,15 @@ body {
   display: flex;
   gap: 15px;
   flex-grow: 1;
-  margin-left: 10px;
-  /* justify-content: center;  */
+  /* margin-left: 10px; */
+  justify-content: center; 
 }
 
 .category-sidebtn a {
   color: white;
   text-decoration: none;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
 }
 
@@ -604,11 +605,12 @@ body {
 .contact-info {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
   color: white;
   font-weight: bold;
   height: 100%;
   font-size: 20px;
+  flex-shrink: 1  ;
 }
 
 .blog-btn {
@@ -625,23 +627,31 @@ body {
   gap: 5px;
 }
 
+.category-btn, .blog-btn {
+  flex-shrink: 1;
+  min-width: auto; /* Remove hard min-width */
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
 @media (max-width: 768px) {
   .hero-navbar-allignment {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     gap: 10px;
     padding: 5px 10px;
   }
 
   .category-btn {
-    font-size: 13px;
+    font-size: 12px;
     padding: 18px 16px;
-    min-width: 160px;
+    min-width: 130px;
   }
 
   .category-sidebtn {
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
+    /* flex-wrap: wrap;  */
   }
 
   .contact-info {
@@ -652,6 +662,48 @@ body {
   .blog-btn {
     font-size: 14px;
     padding: 17px 16px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .category-btn, .blog-btn {
+    padding: 18px 8px;
+    font-size: 12px;
+    min-width: auto;
+  }
+
+  .contact-info {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .category-sidebtn a {
+    font-size: 11px;
+  }
+}
+
+
+/* Below 550px — reduce further */
+@media (max-width: 550px) {
+  .menu-barr {
+    height: 40px;
+  }
+
+  .category-btn, .blog-btn {
+    padding: 6px 10px;
+    min-width: 110px;
+    font-size: 10px;
+  }
+
+  .category-sidebtn a {
+    font-size: 10px;
+    margin: 0 3px;
+  }
+
+  .contact-info {
+    font-size: 10px;
+    gap: 5px;
   }
 }
 
