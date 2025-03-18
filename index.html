@@ -162,64 +162,52 @@
 
 
     <div class="main-content">
-      <section id="hero-slider" class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-
-            <!-- Slide 1 -->
-            <li class="splide__slide">
-              <div class="hero-center">
-                <div class="hero-image-wrapper">
-                  <img src="images/cactus-potted-plant-lavender-smart-phone-white-background.jpg" loading="lazy"
-                    alt="Mobile 1">
-                  <div class="hero-text">
-                    <span class="tag">MOBILE</span>
-                    <h1>Best mobile options <br> at any resolution</h1>
-                    <div>
-                      <button class="learn-more-btn">
-                        LEARN MORE
-                        <div>
-                          <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
-                        </div>
-                      </button>
-                    </div>
-                    <!-- Pagination Wrapper -->
-                    <!-- <div class="custom-pagination splide__pagination"></div> -->
-                  </div>
+        <section id="hero-slider" class="owl-carousel owl-theme">
+    
+          <!-- Slide 1 -->
+          <div class="hero-center item">
+            <div class="hero-image-wrapper">
+              <img src="images/cactus-potted-plant-lavender-smart-phone-white-background.jpg" alt="Mobile 1">
+              <div class="hero-text">
+                <span class="tag">MOBILE</span>
+                <h1>Best mobile options <br> at any resolution</h1>
+                <button class="learn-more-btn">
+                  LEARN MORE
+                  <div><i class="fa-sharp fa-solid fa-arrow-right-long"></i></div>
+                </button>
+                <div class="custom-pagination">
+                  <div class="dot" data-index="0"></div>
+                  <div class="dot" data-index="1"></div>
                 </div>
               </div>
-            </li>
-
-            <!-- Slide 2 -->
-            <li class="splide__slide">
-              <div class="hero-center">
-                <div class="hero-image-wrapper">
-                  <img src="images/cactus-potted-plant-lavender-smart-phone-white-background.jpg" loading="lazy"
-                    alt="Mobile 2">
-                  <div class="hero-text">
-                    <span class="tag">MOBILE</span>
-                    <h1>Best mobile options <br> at any resolution</h1>
-                    <div>
-                      <button class="learn-more-btn">
-                        LEARN MORE
-                        <div>
-                          <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
-                        </div>
-                      </button>
-                    </div>
-
-                    <!-- Pagination Wrapper -->
-                  </div>
+            </div>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="hero-center item">
+            <div class="hero-image-wrapper">
+              <img src="images/cactus-potted-plant-lavender-smart-phone-white-background.jpg" alt="Mobile 2">
+              <div class="hero-text">
+                <span class="tag">MOBILE</span>
+                <h1>Best mobile options <br> at any resolution</h1>
+                <button class="learn-more-btn">
+                  LEARN MORE
+                  <div><i class="fa-sharp fa-solid fa-arrow-right-long"></i></div>
+                </button>
+                <div class="custom-pagination">
+                  <div class="dot" data-index="0"></div>
+                  <div class="dot" data-index="1"></div>
                 </div>
               </div>
-            </li>
-
-          </ul>
-        </div>
-        <div class="custom-pagination"></div>
-
-      </section>
-
+            </div>
+          </div>
+    
+        </section>
+<!-- 
+        <div class="custom-pagination">
+          <div class="dot" data-index="0"></div>
+          <div class="dot" data-index="1"></div>
+        </div> -->
 
       <div class="hero-right">
         <div class="small-box">
@@ -1147,62 +1135,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var splide = new Splide("#hero-slider", {
-        type: "loop",
-        perPage: 1,
-        perMove: 1,
-        pagination: false,
-        arrows: false,
-        autoplay: true,
-        interval: 3000,
-        speed: 600,
-        start: 0,
-      });
-
-      splide.on("mounted", function () {
-        document.querySelector("#hero-slider").style.visibility = "visible";
-
-        // Correct Slide Count (Exclude clones!)
-        let realSlides = splide.Components.Elements.slides.filter(slide => !slide.classList.contains('is-clone'));
-        let paginationContainer = document.querySelector('.custom-pagination');
-        paginationContainer.innerHTML = '';
-
-        realSlides.forEach((slide, i) => {
-          let dot = document.createElement('span');
-          dot.classList.add('dot');
-          if (i === 0) dot.classList.add('active');
-          dot.dataset.index = i;
-
-          dot.addEventListener('click', function () {
-            splide.go(i);
-          });
-
-          paginationContainer.appendChild(dot);
-        });
-
-        splide.on('move', function (newIndex) {
-          let realIndex = newIndex % realSlides.length; // Handle loop
-          document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
-          document.querySelector(`.dot[data-index="${realIndex}"]`).classList.add('active');
-        });
-
-        splide.refresh();
-      });
-
-      splide.mount();
-
-
-
-
-
-
-
-
-
-
-
-
-
+     
       // Initialize Category Slider
 
       var categorySlider = new Splide("#category-slider", {

@@ -47,8 +47,41 @@ $(document).ready(function(){
           }
         }
       });
-      
 
+      var $heroSlider = $('#hero-slider');
+
+      $heroSlider.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false, // Default dots OFF
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        onInitialized: updateCustomDots,
+        onTranslated: updateCustomDots
+      });
+
+      function updateCustomDots(event) {
+        var total = event.item.count;
+        var index = event.item.index - event.relatedTarget._clones.length / 2;
+        if (index >= total || index < 0) {
+          index = total - 1;
+        }
+
+        $('.custom-pagination').each(function (i, el) {
+          var dots = $(el).find('.dot');
+          dots.removeClass('active');
+          dots.eq(index).addClass('active');
+        });
+      }
+
+      // Click event on custom dots
+      $('.custom-pagination .dot').click(function () {
+        var index = $(this).data('index');
+        $heroSlider.trigger('to.owl.carousel', [index, 300]);
+      });
 
   
   });

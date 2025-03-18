@@ -728,48 +728,44 @@ body {
 }
 
 /* Splide Slider */
-#hero-slider {
+/* #hero-slider {
   width: 100%;
   max-width: 1400px;
   position: relative;
   visibility: hidden;
+} */
+
+
+#hero-slider {
+  width: 100%;
+  max-width: 1400px;
+  /* visibility: hidden; */
+  margin: auto;
 }
+
+
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+}
+
 
 #hero-slider.is-active {
   visibility: visible;
 }
 
-.main-content .splide__track {
-  overflow: hidden;
-  /* height: 100%;
-  padding: 0; */
-}
 
-.main-content .splide__list {
-  display: flex;
-  height: 100%;
-}
-
-.main-content .splide__slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: auto;
-  /* width: 100%; */
-
-
-}
 
 /* Hero Center (Left Side) */
 .hero-center {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Centers the image properly */
   justify-content: center;
+  position: relative; /* Ensure relative for positioning hero-text */
 }
+
 
 /* Image Wrapper */
 .hero-image-wrapper {
@@ -780,12 +776,18 @@ body {
 
 .hero-image-wrapper img {
   width: 100%;
-  height: 100%;
-  /* max-width: 500px; */
-  display: block;
-  border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
+  height: 100%; /* Ensures consistent height */
 }
+
+#hero-slider.owl-carousel {
+  overflow: hidden;
+}
+.owl-stage-outer {
+  overflow: hidden;
+}
+
+
 
 /* Hero Text */
 .hero-text {
@@ -832,15 +834,13 @@ body {
 }
 
 
-
 .custom-pagination {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 10px;
-  position: absolute;
-  bottom: 14em;
-  left: 5%;
-  /* margin-top: 10px; */
+  margin-top: 20px;
+
+
 }
 
 .custom-pagination .dot {
@@ -943,7 +943,7 @@ body {
 @media (max-width: 1024px) {
   .hero-text {
     font-size: 2.2rem;
-    max-width: 60%;
+    /* max-width: 60%; */
   }
 
   .hero-text h1 {
