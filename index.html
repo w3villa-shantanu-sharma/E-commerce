@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Journal Store</title>
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
@@ -14,6 +18,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
 
 </head>
 
@@ -603,57 +608,7 @@
     </p>
 
     <div class="wrapper">
-      <!-- <div class="category-container">
-          <div class="category-sidebar">
-            <h3>Fashion</h3>
-            <div class="underline"></div>
-            <img src="images/fashion.jpg" alt="Fashion">
-            <ul>
-              <li>Accessories</li>
-              <li>Dresses</li>
-              <li>Pants</li>
-              <li>T-Shirts</li>
-              <li><a href="#">See all in Fashion</a></li>
-            </ul>
-          </div>
 
-          <div class="fashion-products">
-            <h3 class="section-title">New in Fashion</h3>
-            <div class="underline"></div>
-
-            <div class="products-grid">
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="images/fashion.jpg" alt="Bodycorn Dress">
-                  <div class="badge red">2-3 DAYS</div>
-                  <div class="badge blue">NEW</div>
-                </div>
-                <div class="prd-img-details">
-                  <h4><a href="#">Bodycorn Dress</a></h4>
-                  <div class="price">$399.00</div>
-                </div>
-                <div class="add-to-cart-container">
-                  <button class="cart-btn">Add to Cart</button>
-                  <div class="icn2">
-                    <div class="icon-container">
-                      <i class="fas fa-heart"></i>
-                      <i class="fas fa-exchange-alt"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-           
-
-             
-            <div class="carousel-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-
-        </div> -->
       <div class="categories-container">
         <div class="fashion-category">
           <div class="title">
@@ -871,7 +826,6 @@
 
   <!-------------------From our Blog----------------- -->
 
-
   <section class="blog-section">
     <h2>From our Blog</h2>
     <p>
@@ -885,87 +839,96 @@
     </div>
 
     <div class="wrapper">
-
-      <div class="blog-container splide" id="blog-slider">
-        <div class="splide__track">
-          <div class="splide__list">
-            <div class="splide__slide blog-card">
-              <div class="blog-data">
-                <div class="blog-date1">
-                  <span class="date">02</span> <span class="month">Aug</span>
-                </div>
-                <img src="images/journal.jpg" alt="Blog Image 1" />
-                <div class="meta">
-                  <span>👤 admin</span>
-                  <span>💬 38</span>
-                  <span>👁 19340</span>
-                </div>
-              </div>
-              <div class="blog-info">
-                <h3><b>Journal Blog is Here</b></h3>
-                <p>
-                  The Journal 3 blog has been greatly improved and it now comes with
-                  the most advanced set of typography tools, including custom
-                  drop-cap support as well as optional newspaper-like fluid columns.
-                </p>
-                <a href="#">Read More →</a>
-              </div>
+      <div class="blog-container owl-carousel">
+        <!-- Slide 1 -->
+        <div class="blog-card">
+          <div class="blog-data">
+            <div class="blog-date1">
+              <span class="date">02</span> <span class="month">Aug</span>
             </div>
-
-            <div class="splide__slide blog-card">
-              <div class="blog-data">
-                <div class="blog-date2">
-                  <span class="date">02</span> <span class="month">Aug</span>
-                </div>
-                <img src="images/journal.jpg" alt="Blog Image 2" />
-                <div class="meta">
-                  <span>👤 admin</span>
-                  <span>💬 17</span>
-                  <span>👁 7341</span>
-                </div>
-              </div>
-              <div class="blog-info">
-                <h3><b>Best Leather Bags</b></h3>
-                <p>
-                  The Journal 3 blog has been greatly improved and it now comes with
-                  the most advanced set of typography tools, including custom drop-cap
-                  support as well as optional newspaper-like fluid columns.
-                </p>
-                <a href="#">Read More →</a>
-              </div>
+            <img src="images/journal.jpg" alt="Blog Image 1" />
+            <div class="meta">
+              <span>👤 admin</span>
+              <span>💬 38</span>
+              <span>👁 19340</span>
             </div>
-
-            <div class="splide__slide blog-card">
-              <div class="blog-data">
-                <div class="blog-date3">
-                  <span class="date">02</span> <span class="month">Aug</span>
-                </div>
-                <img src="images/post.jpg" alt="Blog Image 3" />
-                <div class="meta">
-                  <span>👤 admin</span>
-                  <span>💬 47</span>
-                  <span>👁 6264</span>
-                </div>
-              </div>
-              <div class="blog-info">
-                <h3><b>Another Blog Post</b></h3>
-                <p>
-                  The Journal 3 blog has been greatly improved and it now comes with
-                  the most advanced set of typography tools, including custom drop-cap
-                  support as well as optional newspaper-like fluid columns.
-                </p>
-                <a href="#">Read More →</a>
-              </div>
-            </div>
+          </div>
+          <div class="blog-info">
+            <h3><b>Journal Blog is Here</b></h3>
+            <p>
+              The Journal 3 blog has been greatly improved and it now comes with the most advanced typography.
+            </p>
+            <a href="#">Read More →</a>
           </div>
         </div>
 
-        <!-- Custom Pagination -->
-        <div class="blog-slider-pagination" id="custom-pagination"></div>
+        <!-- Slide 2 -->
+        <div class="blog-card">
+          <div class="blog-data">
+            <div class="blog-date2">
+              <span class="date">02</span> <span class="month">Aug</span>
+            </div>
+            <img src="images/journal.jpg" alt="Blog Image 2" />
+            <div class="meta">
+              <span>👤 admin</span>
+              <span>💬 17</span>
+              <span>👁 7341</span>
+            </div>
+          </div>
+          <div class="blog-info">
+            <h3><b>Best Leather Bags</b></h3>
+            <p>
+              The Journal 3 blog has been greatly improved and it now comes with the most advanced typography.
+            </p>
+            <a href="#">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="blog-card">
+          <div class="blog-data">
+            <div class="blog-date3">
+              <span class="date">02</span> <span class="month">Aug</span>
+            </div>
+            <img src="images/post.jpg" alt="Blog Image 3" />
+            <div class="meta">
+              <span>👤 admin</span>
+              <span>💬 47</span>
+              <span>👁 6264</span>
+            </div>
+          </div>
+          <div class="blog-info">
+            <h3><b>Another Blog Post</b></h3>
+            <p>
+              The Journal 3 blog has been greatly improved and it now comes with the most advanced typography.
+            </p>
+            <a href="#">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-data">
+              <div class="blog-date3">
+                <span class="date">02</span> <span class="month">Aug</span>
+              </div>
+              <img src="images/post.jpg" alt="Blog Image 3" />
+              <div class="meta">
+                <span>👤 admin</span>
+                <span>💬 47</span>
+                <span>👁 6264</span>
+              </div>
+            </div>
+            <div class="blog-info">
+              <h3><b>Another Blog Post</b></h3>
+              <p>
+                The Journal 3 blog has been greatly improved and it now comes with the most advanced typography.
+              </p>
+              <a href="#">Read More →</a>
+            </div>
+          </div>
       </div>
     </div>
   </section>
-
 
   <!-- -----------------------TESTIMONIALS---------------------- -->
 
@@ -1180,48 +1143,48 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var splide = new Splide("#hero-slider", {
-    type: "loop",
-    perPage: 1,
-    perMove: 1,
-    pagination: false,
-    arrows: false,
-    autoplay: true,
-    interval: 3000,
-    speed: 600,
-    start: 0,
-  });
-
-  splide.on("mounted", function () {
-    document.querySelector("#hero-slider").style.visibility = "visible";
-
-    // Correct Slide Count (Exclude clones!)
-    let realSlides = splide.Components.Elements.slides.filter(slide => !slide.classList.contains('is-clone'));
-    let paginationContainer = document.querySelector('.custom-pagination');
-    paginationContainer.innerHTML = '';
-
-    realSlides.forEach((slide, i) => {
-      let dot = document.createElement('span');
-      dot.classList.add('dot');
-      if (i === 0) dot.classList.add('active');
-      dot.dataset.index = i;
-
-      dot.addEventListener('click', function () {
-        splide.go(i);
+        type: "loop",
+        perPage: 1,
+        perMove: 1,
+        pagination: false,
+        arrows: false,
+        autoplay: true,
+        interval: 3000,
+        speed: 600,
+        start: 0,
       });
 
-      paginationContainer.appendChild(dot);
-    });
+      splide.on("mounted", function () {
+        document.querySelector("#hero-slider").style.visibility = "visible";
 
-    splide.on('move', function (newIndex) {
-      let realIndex = newIndex % realSlides.length; // Handle loop
-      document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
-      document.querySelector(`.dot[data-index="${realIndex}"]`).classList.add('active');
-    });
+        // Correct Slide Count (Exclude clones!)
+        let realSlides = splide.Components.Elements.slides.filter(slide => !slide.classList.contains('is-clone'));
+        let paginationContainer = document.querySelector('.custom-pagination');
+        paginationContainer.innerHTML = '';
 
-    splide.refresh();
-  });
+        realSlides.forEach((slide, i) => {
+          let dot = document.createElement('span');
+          dot.classList.add('dot');
+          if (i === 0) dot.classList.add('active');
+          dot.dataset.index = i;
 
-  splide.mount();
+          dot.addEventListener('click', function () {
+            splide.go(i);
+          });
+
+          paginationContainer.appendChild(dot);
+        });
+
+        splide.on('move', function (newIndex) {
+          let realIndex = newIndex % realSlides.length; // Handle loop
+          document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+          document.querySelector(`.dot[data-index="${realIndex}"]`).classList.add('active');
+        });
+
+        splide.refresh();
+      });
+
+      splide.mount();
 
 
 
@@ -1242,7 +1205,7 @@
         perPage: 5,
         perMove: 1,
         gap: "5px",
-        centered: true,
+        // centered: true,
         breakpoints: {
           1280: { perPage: 4 },
           1024: { perPage: 4 },
@@ -1325,49 +1288,17 @@
 
       brandsection.mount();
 
-      let blog = new Splide('#blog-slider', {
-        type: 'loop',
-        perPage: 2,
-        perMove: 1,
-        centered: true,
-        breakpoints: {
-          1024: {
-            perPage: 2,
-            gap: "20px",
-          },
-          768: { perPage: 1 }
-        },
-        pagination: false,
-        arrows: false
-      }).mount();
-
-      // Custom Pagination
-      let paginationContainer = document.getElementById('custom-pagination');
-      let totalSlides = blog.length;
-
-      for (let i = 0; i < totalSlides; i++) {
-        let dot = document.createElement('span');
-        dot.classList.add('dot');
-        if (i === 0) dot.classList.add('active');
-        dot.dataset.index = i;
-
-        dot.addEventListener('click', function () {
-          blog.go(parseInt(this.dataset.index));
-        });
-
-        paginationContainer.appendChild(dot);
-      }
-
-      blog.on('move', function (newIndex) {
-        document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
-        document.querySelector(`.dot[data-index="${newIndex}"]`).classList.add('active');
-      });
-
-
+      
 
 
     });
   </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
