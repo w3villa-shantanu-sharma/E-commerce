@@ -1,22 +1,37 @@
-// sliders.js
-
-// ===== Owl Carousel Initialization =====
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+  
+    //  Testimonial Carousel
+    $('.testimonials-carousel').owlCarousel({
       loop: true,
       margin: 20,
       nav: false,
       dots: true,
       autoplay: true,
       autoplayTimeout: 3000,
-      smartSpeed: 800,
       responsive:{
         0:{ items:1 },
         600:{ items:2 },
-        1000:{ items:3 }
+        1000:{ items:3 } // For example
       }
     });
+  
+    //  Blog Carousel
+    $('.blog-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true, // Different behavior
+      autoplay: false,
+      responsive:{
+        0:{ items:1 },
+        768:{ items:2 },
+        1024:{ items:3 }
+      }
+    });
+  
   });
+  
+
   
   // ===== Splide.js Initialization =====
   document.addEventListener("DOMContentLoaded", function () {
@@ -37,39 +52,19 @@ $(document).ready(function(){
     });
     productSlider.mount();
   
-    // Testimonial Slider
-    var testimonialSlider = new Splide("#testimonial-slider", {
-      type: "loop",
-      perPage: 3,
-      perMove: 1,
-      focus: 'center',
-      gap: "32px",
-      arrows: false,
-      pagination: false,
-      speed: 800,
-      autoplay: true,
-      interval: 5000,
-      breakpoints: {
-        1024: { perPage: 2 },
-        768: { perPage: 1 },
-      },
-    });
-    testimonialSlider.mount();
+
   
     // Create Pagination
     createCustomPagination(productSlider, ".product-dots");
-    createCustomPagination(testimonialSlider, ".testimonial-dots");
   
     // Fix sizing
-    setTimeout(() => {
-      testimonialSlider.refresh();
-    }, 100);
+   
   });
   
   // ===== Custom Pagination Function =====
   function createCustomPagination(slider, dotContainerSelector) {
     let dotsContainer = document.querySelector(dotContainerSelector);
-    let slideCount = slider.Components.Elements.slides.length;
+    let slideCount = slider.length;
     dotsContainer.innerHTML = '';
   
     for (let i = 0; i < slideCount; i++) {

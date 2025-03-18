@@ -2615,16 +2615,12 @@ body {
 
 
 
-
-
 /* Testimonials Section */
 .testimonials {
   text-align: center;
   background: white;
   padding: 60px 0;
 }
-
-
 
 /* Title */
 .testimonials h2 {
@@ -2641,25 +2637,8 @@ body {
   margin: 10px auto 30px;
 }
 
-/* Splide Container */
-.splide {
-  max-width: 100%;
-}
-
-/* Equal Size Testimonial Cards */
-.splide__slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  min-height: auto;
-}
-
-/* Testimonial Box */
-.testimonial {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Owl Carousel */
+.owl-carousel .testimonial {
   background: white;
   padding: 25px;
   text-align: center;
@@ -2667,10 +2646,10 @@ body {
   line-height: 1.5;
   color: #545252;
   border-radius: 5px;
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-  width: 100%;
   min-height: 250px;
-  /* Ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Quote Icon */
@@ -2687,46 +2666,37 @@ body {
   color: #555;
 }
 
-/* Custom Pagination Dots */
-.testimonial-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+
+.owl-dots {
+  display: block !important;
+  position: relative;
+  margin-top: 20px;
 }
 
-.dot {
+.owl-dot span {
   width: 12px;
   height: 12px;
-  margin: 5px;
-  background-color: #ccc;
+  background: #ccc;
   border-radius: 50%;
   display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 5px;
 }
 
-.dot.active {
+.owl-dot.active span {
   background: #e26734;
 }
 
-/* Splide Arrows */
-.splide__arrow {
-  background-color: #e26734 !important;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-}
-
-.splide__arrow svg {
-  fill: white !important;
-}
-
 /* Responsive Styles */
-@media (max-width: 1024px) {
-  .testimonial {
-    min-height: 300px;
+@media (max-width: 600px) {
+  .testimonials h2 {
+    font-size: 28px;
+  }
+  .owl-carousel .testimonial {
+    font-size: 15px;
+    padding: 20px;
   }
 }
+
 
 /* Most Viewed Section */
 .most-viewed {
