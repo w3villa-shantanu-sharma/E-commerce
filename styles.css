@@ -2650,7 +2650,7 @@ body {
   margin-bottom: 15px;
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  /* max-width: 1100px; */
 }
 
 .brand-section h2::after {
@@ -2790,7 +2790,7 @@ body {
   margin-bottom: 15px;
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  /* max-width: 1100px; */
 }
 
 .brand-section2 h2::after {
