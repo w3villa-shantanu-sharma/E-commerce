@@ -754,7 +754,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   .menu-barr {
     display: none;
   }
@@ -1115,13 +1115,103 @@ body {
   }
 }
 
-@media(max-width:425px) {
-  .main-content .splide__pagination {
-    bottom: 1em;
-    left: 3.2em;
-    width: 22%;
+
+@media (max-width: 600px) {
+  .hero-text {
+    font-size: 1.2rem;
+    top: 22%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.6rem;
+    padding: 5px 8px;
+    width: 98px;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+    width: 90%;
   }
 }
+
+@media (max-width: 480px) {
+
+  .main-content{
+    gap: 4px;
+  }
+
+  .small-box img {
+    height: 196px;
+  }
+
+
+  .hero-text {
+    font-size: 1.2rem;
+    top: 15%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.7rem;
+    padding: 6px 8px;
+    width: 110px;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  .main-content{
+    gap: 2px;
+  }
+
+  .small-box img {
+    height: 196px;
+  }
+
+
+  .hero-text {
+    font-size: 1rem;
+    top: 15%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.5rem;
+    padding: 6px 8px;
+    width: 90px;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .custom-pagination{
+    position: relative;
+    bottom: 0.5rem;
+    left: 0%;
+  }
+}
+
 
 /* Main Section */
 .features-bar {
