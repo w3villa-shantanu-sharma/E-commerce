@@ -47,6 +47,31 @@ $(document).ready(function () {
       }
     }
   });
+
+  $('#brand-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      480: {
+        items: 3
+      },
+      768: {
+        items: 5
+      },
+      1024: {
+        items: 7
+      },
+      1200: {
+        items: 9
+      }
+    }
+  });
   // $(".owl-new-fashion").owlCarousel({
   //   loop: false,
   //   margin: 20,
