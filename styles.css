@@ -1611,7 +1611,7 @@ body {
 @media (max-width: 768px) {
   .why-buy {
     align-items: flex-start;
-    text-align: left;
+    /* text-align: left; */
     background: whitesmoke;
   }
 
@@ -1658,6 +1658,7 @@ body {
 @media (max-width: 480px) {
 
   .why-buy h2 {
+    text-align: left;
     font-size: 24px;
   }
 
