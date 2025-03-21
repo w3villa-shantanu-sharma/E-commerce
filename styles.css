@@ -972,7 +972,7 @@ body {
 
 .custom-pagination {
   position: absolute;
-  bottom: -5em;
+  bottom: -104%;
   left: 3%;
 }
 
@@ -1041,6 +1041,32 @@ body {
 }
 
 
+@media (max-width:1500px) {
+  .custom-pagination {
+    position: absolute;
+    bottom: -78%;
+    left: 3%;
+  }
+  
+  
+}
+
+@media (max-width: 1390px) {
+  .custom-pagination {
+    position: absolute;
+    bottom: -60%;
+    left: 3%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .custom-pagination {
+    position: absolute;
+    bottom: -50%;
+    left: 3%;
+  }
+}
+
 
 
 
@@ -1061,8 +1087,15 @@ body {
   }
 
   .custom-pagination {
-    bottom: 7em;
-    left: 5%;
+    bottom: -60%;
+    left: 0%;
+  }
+}
+
+@media (max-width: 992px) { 
+  .custom-pagination {
+    bottom: -34%;
+    left: 0%;
   }
 }
 
@@ -1104,8 +1137,8 @@ body {
 
   .custom-pagination {
     /* position: relative; */
-    bottom: 3em;
-    left: 5%;
+    bottom: -2%;
+    left: 1%;
 
   }
 
@@ -1115,7 +1148,7 @@ body {
   }
 
   .learn-more-btn {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 14px 11px;
     width: 150px;
     /* display: block; */
@@ -1146,6 +1179,13 @@ body {
     text-align: left;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width:590px) {
+  .custom-pagination {
+    bottom: -10%;
+    left: 4%;
   }
 }
 
@@ -1255,6 +1295,8 @@ body {
   .learn-more-btn {
     font-size: 0.5rem;
     padding: 6px 8px;
+    margin: 5px 0px;
+
     width: 90px;
   }
 
@@ -1264,9 +1306,9 @@ body {
   }
 
   .custom-pagination {
-    position: relative;
-    bottom: 0.5rem;
-    left: 0%;
+    width: 48px;
+    bottom: -10%;
+    left: 5%;
   }
 }
 
@@ -1438,7 +1480,6 @@ body {
   align-items: center;
   text-align: center;
   padding: 50px 15px;
-  background-color: #e5eaedba;
 }
 
 .why-buy h2 {
@@ -1470,7 +1511,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
+  /* gap: 8px; */
   margin: 20px 0;
   padding: 20px 0;
   width: 80%;
@@ -1537,7 +1578,7 @@ body {
 .category {
   width: 100%;
   max-width: 280px;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
   position: relative;
   background: rgb(202, 198, 198);
@@ -1633,6 +1674,7 @@ body {
 #category-slider.owl-carousel .owl-item {
   display: flex;
   justify-content: center;
+  /* margin-right: 0px !important; */
 }
 
 #category-slider .category {
@@ -1786,9 +1828,9 @@ body {
   bottom: 7px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(212, 209, 209, 0.9);
+  background: whitesmoke;
   padding: 5px 10px;
-  /* border-radius: 3px; */
+  border-radius: 3px;
   font-size: 15px;
   font-weight: 500;
 }
