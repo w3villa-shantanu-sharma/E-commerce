@@ -847,9 +847,10 @@ body {
 
 #hero-slider {
   width: 100%;
-  max-width: 1400px;
+
+  /* max-width: 1400px; */
   /* visibility: hidden; */
-  margin: auto;
+  /* margin: auto; */
 }
 
 
@@ -1718,10 +1719,12 @@ body {
 
 @media (max-width: 320px) {
   .why-buy h2 {
+    padding: 0 10px;
     font-size: 20px;
   }
 
   .why-buy p {
+    padding: 0 10px;
     font-size: 13px;
   }
 }
@@ -2264,12 +2267,12 @@ body {
   margin-left: 5px;
 }
 
-.owl-carousel {
+/* #features .owl-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
+} */
 
 .owl-theme .owl-dots .owl-dot span {
   width: 12px;
@@ -3192,7 +3195,7 @@ body {
 
 .categoryyy{
   background: #bbcbd036;
-  padding: 50px 0;
+  padding: 20px 15px;
 
 }
 .categoryyy .description {
@@ -3247,8 +3250,8 @@ body {
 .new-fashion-card-container {
   display: flex;
   /* flex-wrap: wrap; */
-  gap: 16px;
-  /* padding-bottom: 34px; */
+  /* gap: 16px; */
+  padding-bottom: 34px;
 
 }
 
@@ -4077,6 +4080,9 @@ label a {
   align-items: center;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
+  z-index: 99;
+
 }
 
 .scroll-top.show {
