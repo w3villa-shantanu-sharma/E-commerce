@@ -24,6 +24,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding-inline: 12px;
+  box-sizing: border-box;
   /* overflow-x: hidden; */
 }
 
@@ -58,6 +59,7 @@ body {
 .top-right i,
 .top-between i {
   font-size: 0.9rem;
+  vertical-align: middle;
 }
 
 .top-bar a {
@@ -75,7 +77,6 @@ body {
   font-size: 0.89rem;
 }
 
-/* ======================== */
 /* Hide Mobile-Specific Sections by Default */
 .mobile-left,
 .mobile-right {
@@ -86,7 +87,6 @@ body {
 @media (max-width: 768px) {
   .top-bar {
     background: #2a00b7;
-    /* Keep the blue background */
     padding: 12px 15px;
     display: flex;
     justify-content: space-between;
@@ -106,12 +106,10 @@ body {
     display: flex;
     align-items: center;
     gap: 11px;
-    /* Increased spacing */
   }
 
   .mobile-left a {
     font-size: 1rem;
-    /* Slightly larger text */
     color: white;
     font-weight: 600;
     text-decoration: none;
@@ -123,7 +121,6 @@ body {
 
   .mobile-left i {
     font-size: 1.1rem;
-    /* Slightly larger icons */
     color: white;
   }
 
@@ -137,7 +134,6 @@ body {
   .mobile-right span {
     color: white;
     font-size: 1rem;
-    /* Increased font size */
     display: flex;
     align-items: center;
     gap: 6px;
@@ -280,7 +276,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(228, 228, 228);
+  background: #e4e4e457;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
   width: 100%;
@@ -648,7 +644,7 @@ body {
 
 .category-btn {
   position: relative;
-  background: yellow;
+  background: #ffd050;
   color: black;
   border: none;
   padding: 18px 14px;
@@ -693,8 +689,8 @@ body {
 
 /* New Badge */
 .new {
-  background: orange;
-  color: white;
+  background: #ffd050;
+  color: black; 
   font-size: 10px;
   padding: 3px 6px;
   border-radius: 1px;
@@ -716,7 +712,7 @@ body {
 }
 
 .blog-btn {
-  background: yellow;
+  background: #ffd050;
   color: black;
   border: none;
   padding: 17px 20px;
@@ -938,16 +934,17 @@ body {
 .learn-more-btn {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #e4e4e457;
   font-size: 1rem;
   color: black;
   border-radius: 4px;
   border: 1px solid #3f3e3e;
-  padding: 10px 15px;
+  box-shadow: 0px 4px 8px rgba(130, 129, 129, 0.1);
+  padding: 14px 14px;
   cursor: pointer;
   gap: 10px;
   margin-top: 15px;
-  width: 170px;
+  width: 162px;
 }
 
 
@@ -964,13 +961,19 @@ body {
   width: 14px;
   height: 5px;
   border-radius: 4px;
-  background: white;
+  background: grey;
   transition: opacity 0.3s;
   cursor: pointer;
 }
 
 .custom-pagination .dot.active {
   background: darkorange;
+}
+
+.custom-pagination {
+  position: absolute;
+  bottom: -5em;
+  left: 3%;
 }
 
 
@@ -1037,21 +1040,8 @@ body {
   font-size: 0.9rem;
 }
 
-/* .hero-text {
-  font-size: 2rem;
-  top: 20%;
-  left: 5%;
-  max-width: 60%;
-} */
 
-.hero-text h1 {
-  font-size: 2rem;
-}
 
-.learn-more-btn {
-  font-size: 0.9rem;
-  padding: 8px 12px;
-}
 
 
 /* Tablet View (≤1024px) */
