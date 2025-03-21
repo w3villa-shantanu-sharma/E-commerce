@@ -110,7 +110,7 @@ $(document).ready(function () {
 
   $('#brand-slider').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 8,
     nav: false,
     dots: true,
     autoplay: true,
