@@ -169,6 +169,22 @@ $(document).ready(function () {
     $heroSlider.trigger('to.owl.carousel', [index, 300]);
   });
 
+  const scrollBtn = document.querySelector('.scroll-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // adjust "300" as needed
+      scrollBtn.classList.add('show');
+    } else {
+      scrollBtn.classList.remove('show');
+    }
+  });
+  scrollBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+
+
 
 });
 
